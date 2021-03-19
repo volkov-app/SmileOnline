@@ -1,0 +1,795 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		631DC901B8812E34A31D31B6 /* Pods_SmileOnlineProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CCF983D9D21824A29B19B75 /* Pods_SmileOnlineProjectTests.framework */; };
+		9542A969608F8776FDF8FF0D /* Pods_SmileOnlineProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B91953600922CFE6D2461371 /* Pods_SmileOnlineProjectUITests.framework */; };
+		A6B8A30726055F7F00B7BDE9 /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B8A30626055F7F00B7BDE9 /* QuestionsViewController.swift */; };
+		A6B8A3152605677F00B7BDE9 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B8A3142605677F00B7BDE9 /* TestViewController.swift */; };
+		A6BD442A25E0401E00006286 /* SigningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BD442925E0401E00006286 /* SigningViewController.swift */; };
+		A6BD442F25E0438400006286 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A6BD442E25E0438400006286 /* GoogleService-Info.plist */; };
+		A6C7F52625FFF3E400865D9E /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C7F52525FFF3E400865D9E /* TutorialViewController.swift */; };
+		A6C7F5482601307F00865D9E /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6C7F5472601307F00865D9E /* CollectionViewCell.xib */; };
+		A6FB5C6625DD7AAC00105A2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB5C6525DD7AAC00105A2B /* AppDelegate.swift */; };
+		A6FB5C6825DD7AAC00105A2B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB5C6725DD7AAC00105A2B /* SceneDelegate.swift */; };
+		A6FB5C6A25DD7AAC00105A2B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB5C6925DD7AAC00105A2B /* ViewController.swift */; };
+		A6FB5C6D25DD7AAC00105A2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6FB5C6B25DD7AAC00105A2B /* Main.storyboard */; };
+		A6FB5C7025DD7AAC00105A2B /* SmileOnlineProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A6FB5C6E25DD7AAC00105A2B /* SmileOnlineProject.xcdatamodeld */; };
+		A6FB5C7225DD7AAE00105A2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6FB5C7125DD7AAE00105A2B /* Assets.xcassets */; };
+		A6FB5C7525DD7AAE00105A2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6FB5C7325DD7AAE00105A2B /* LaunchScreen.storyboard */; };
+		A6FB5C8025DD7AAE00105A2B /* SmileOnlineProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB5C7F25DD7AAE00105A2B /* SmileOnlineProjectTests.swift */; };
+		A6FB5C8B25DD7AAF00105A2B /* SmileOnlineProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB5C8A25DD7AAF00105A2B /* SmileOnlineProjectUITests.swift */; };
+		F5135043A3FF4CB943A68146 /* Pods_SmileOnlineProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6EFD9127AE686B76409E1DF /* Pods_SmileOnlineProject.framework */; };
+		FA67AD3F25F366C000DE97FC /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA67AD3E25F366C000DE97FC /* ResultViewController.swift */; };
+		FA6C5E6225E82D760073FFE5 /* VerifyingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6C5E6125E82D760073FFE5 /* VerifyingViewController.swift */; };
+		FA6C5E6425E832960073FFE5 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6C5E6325E832960073FFE5 /* PhotosViewController.swift */; };
+		FA6C5E6825E8376F0073FFE5 /* ImagePickerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6C5E6725E8376F0073FFE5 /* ImagePickerManager.swift */; };
+		FA6C5E6B25E83A060073FFE5 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6C5E6925E83A060073FFE5 /* CollectionViewCell.swift */; };
+		FADA7C7D25EECBE9005FCDD0 /* ClientInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADA7C7C25EECBE9005FCDD0 /* ClientInfoViewController.swift */; };
+		FAF60CD025F35D4F009893A7 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF60CCF25F35D4F009893A7 /* HistoryViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A6FB5C7C25DD7AAE00105A2B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6FB5C5A25DD7AAC00105A2B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6FB5C6125DD7AAC00105A2B;
+			remoteInfo = SmileOnlineProject;
+		};
+		A6FB5C8725DD7AAF00105A2B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6FB5C5A25DD7AAC00105A2B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6FB5C6125DD7AAC00105A2B;
+			remoteInfo = SmileOnlineProject;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A60ACCD076F890FB9EFD9F3 /* Pods-SmileOnlineProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmileOnlineProjectUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmileOnlineProjectUITests/Pods-SmileOnlineProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
+		204B0CEE8AD1C488CDC68131 /* Pods-SmileOnlineProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmileOnlineProjectUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmileOnlineProjectUITests/Pods-SmileOnlineProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		62F991FA73138543B650924C /* Pods-SmileOnlineProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmileOnlineProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmileOnlineProject/Pods-SmileOnlineProject.debug.xcconfig"; sourceTree = "<group>"; };
+		9C1BE676300137576D7C71C1 /* Pods-SmileOnlineProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmileOnlineProjectTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmileOnlineProjectTests/Pods-SmileOnlineProjectTests.release.xcconfig"; sourceTree = "<group>"; };
+		9CCF983D9D21824A29B19B75 /* Pods_SmileOnlineProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmileOnlineProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6B8A30626055F7F00B7BDE9 /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
+		A6B8A3142605677F00B7BDE9 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		A6BD442925E0401E00006286 /* SigningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigningViewController.swift; sourceTree = "<group>"; };
+		A6BD442E25E0438400006286 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A6C7F52525FFF3E400865D9E /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		A6C7F5472601307F00865D9E /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = SOURCE_ROOT; };
+		A6FB5C6225DD7AAC00105A2B /* SmileOnlineProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmileOnlineProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6FB5C6525DD7AAC00105A2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A6FB5C6725DD7AAC00105A2B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A6FB5C6925DD7AAC00105A2B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A6FB5C6C25DD7AAC00105A2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A6FB5C6F25DD7AAC00105A2B /* SmileOnlineProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SmileOnlineProject.xcdatamodel; sourceTree = "<group>"; };
+		A6FB5C7125DD7AAE00105A2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A6FB5C7425DD7AAE00105A2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A6FB5C7625DD7AAE00105A2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6FB5C7B25DD7AAE00105A2B /* SmileOnlineProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmileOnlineProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6FB5C7F25DD7AAE00105A2B /* SmileOnlineProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileOnlineProjectTests.swift; sourceTree = "<group>"; };
+		A6FB5C8125DD7AAE00105A2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6FB5C8625DD7AAF00105A2B /* SmileOnlineProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmileOnlineProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6FB5C8A25DD7AAF00105A2B /* SmileOnlineProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileOnlineProjectUITests.swift; sourceTree = "<group>"; };
+		A6FB5C8C25DD7AAF00105A2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC542F188CB1E9F7302246F0 /* Pods-SmileOnlineProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmileOnlineProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmileOnlineProject/Pods-SmileOnlineProject.release.xcconfig"; sourceTree = "<group>"; };
+		B91953600922CFE6D2461371 /* Pods_SmileOnlineProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmileOnlineProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6EFD9127AE686B76409E1DF /* Pods_SmileOnlineProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmileOnlineProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC1D4AF37D857043FF32078E /* Pods-SmileOnlineProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmileOnlineProjectTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmileOnlineProjectTests/Pods-SmileOnlineProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FA67AD3E25F366C000DE97FC /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		FA6C5E6125E82D760073FFE5 /* VerifyingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyingViewController.swift; sourceTree = "<group>"; };
+		FA6C5E6325E832960073FFE5 /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		FA6C5E6725E8376F0073FFE5 /* ImagePickerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerManager.swift; sourceTree = "<group>"; };
+		FA6C5E6925E83A060073FFE5 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		FADA7C7C25EECBE9005FCDD0 /* ClientInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientInfoViewController.swift; sourceTree = "<group>"; };
+		FAF60CCF25F35D4F009893A7 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A6FB5C5F25DD7AAC00105A2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5135043A3FF4CB943A68146 /* Pods_SmileOnlineProject.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6FB5C7825DD7AAE00105A2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				631DC901B8812E34A31D31B6 /* Pods_SmileOnlineProjectTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6FB5C8325DD7AAF00105A2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9542A969608F8776FDF8FF0D /* Pods_SmileOnlineProjectUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18F09C1F700557C507AC87CB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				62F991FA73138543B650924C /* Pods-SmileOnlineProject.debug.xcconfig */,
+				AC542F188CB1E9F7302246F0 /* Pods-SmileOnlineProject.release.xcconfig */,
+				EC1D4AF37D857043FF32078E /* Pods-SmileOnlineProjectTests.debug.xcconfig */,
+				9C1BE676300137576D7C71C1 /* Pods-SmileOnlineProjectTests.release.xcconfig */,
+				204B0CEE8AD1C488CDC68131 /* Pods-SmileOnlineProjectUITests.debug.xcconfig */,
+				0A60ACCD076F890FB9EFD9F3 /* Pods-SmileOnlineProjectUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		34E04335D8E3423BF88488D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C6EFD9127AE686B76409E1DF /* Pods_SmileOnlineProject.framework */,
+				9CCF983D9D21824A29B19B75 /* Pods_SmileOnlineProjectTests.framework */,
+				B91953600922CFE6D2461371 /* Pods_SmileOnlineProjectUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A6FB5C5925DD7AAC00105A2B = {
+			isa = PBXGroup;
+			children = (
+				A6FB5C6425DD7AAC00105A2B /* SmileOnlineProject */,
+				A6FB5C7E25DD7AAE00105A2B /* SmileOnlineProjectTests */,
+				A6FB5C8925DD7AAF00105A2B /* SmileOnlineProjectUITests */,
+				A6FB5C6325DD7AAC00105A2B /* Products */,
+				18F09C1F700557C507AC87CB /* Pods */,
+				34E04335D8E3423BF88488D1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A6FB5C6325DD7AAC00105A2B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A6FB5C6225DD7AAC00105A2B /* SmileOnlineProject.app */,
+				A6FB5C7B25DD7AAE00105A2B /* SmileOnlineProjectTests.xctest */,
+				A6FB5C8625DD7AAF00105A2B /* SmileOnlineProjectUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A6FB5C6425DD7AAC00105A2B /* SmileOnlineProject */ = {
+			isa = PBXGroup;
+			children = (
+				FAF60CD125F35D56009893A7 /* Controllers */,
+				A6FB5C6525DD7AAC00105A2B /* AppDelegate.swift */,
+				A6FB5C6725DD7AAC00105A2B /* SceneDelegate.swift */,
+				A6FB5C6B25DD7AAC00105A2B /* Main.storyboard */,
+				A6B8A3142605677F00B7BDE9 /* TestViewController.swift */,
+				A6FB5C7125DD7AAE00105A2B /* Assets.xcassets */,
+				A6FB5C7325DD7AAE00105A2B /* LaunchScreen.storyboard */,
+				A6FB5C7625DD7AAE00105A2B /* Info.plist */,
+				A6FB5C6E25DD7AAC00105A2B /* SmileOnlineProject.xcdatamodeld */,
+				FA6C5E6725E8376F0073FFE5 /* ImagePickerManager.swift */,
+				FA6C5E6925E83A060073FFE5 /* CollectionViewCell.swift */,
+				A6BD442E25E0438400006286 /* GoogleService-Info.plist */,
+				A6C7F5472601307F00865D9E /* CollectionViewCell.xib */,
+			);
+			path = SmileOnlineProject;
+			sourceTree = "<group>";
+		};
+		A6FB5C7E25DD7AAE00105A2B /* SmileOnlineProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				A6FB5C7F25DD7AAE00105A2B /* SmileOnlineProjectTests.swift */,
+				A6FB5C8125DD7AAE00105A2B /* Info.plist */,
+			);
+			path = SmileOnlineProjectTests;
+			sourceTree = "<group>";
+		};
+		A6FB5C8925DD7AAF00105A2B /* SmileOnlineProjectUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A6FB5C8A25DD7AAF00105A2B /* SmileOnlineProjectUITests.swift */,
+				A6FB5C8C25DD7AAF00105A2B /* Info.plist */,
+			);
+			path = SmileOnlineProjectUITests;
+			sourceTree = "<group>";
+		};
+		FAF60CD125F35D56009893A7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A6B8A30626055F7F00B7BDE9 /* QuestionsViewController.swift */,
+				A6FB5C6925DD7AAC00105A2B /* ViewController.swift */,
+				FA6C5E6325E832960073FFE5 /* PhotosViewController.swift */,
+				A6BD442925E0401E00006286 /* SigningViewController.swift */,
+				FA6C5E6125E82D760073FFE5 /* VerifyingViewController.swift */,
+				FAF60CCF25F35D4F009893A7 /* HistoryViewController.swift */,
+				FADA7C7C25EECBE9005FCDD0 /* ClientInfoViewController.swift */,
+				A6C7F52525FFF3E400865D9E /* TutorialViewController.swift */,
+				FA67AD3E25F366C000DE97FC /* ResultViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A6FB5C6125DD7AAC00105A2B /* SmileOnlineProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6FB5C8F25DD7AAF00105A2B /* Build configuration list for PBXNativeTarget "SmileOnlineProject" */;
+			buildPhases = (
+				E59DA19BE2BE848C4A8A909E /* [CP] Check Pods Manifest.lock */,
+				A6FB5C5E25DD7AAC00105A2B /* Sources */,
+				A6FB5C5F25DD7AAC00105A2B /* Frameworks */,
+				A6FB5C6025DD7AAC00105A2B /* Resources */,
+				46330BD66FE7A115C310DF6F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmileOnlineProject;
+			productName = SmileOnlineProject;
+			productReference = A6FB5C6225DD7AAC00105A2B /* SmileOnlineProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A6FB5C7A25DD7AAE00105A2B /* SmileOnlineProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6FB5C9225DD7AAF00105A2B /* Build configuration list for PBXNativeTarget "SmileOnlineProjectTests" */;
+			buildPhases = (
+				6E9FE865FCAFDC399D745949 /* [CP] Check Pods Manifest.lock */,
+				A6FB5C7725DD7AAE00105A2B /* Sources */,
+				A6FB5C7825DD7AAE00105A2B /* Frameworks */,
+				A6FB5C7925DD7AAE00105A2B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6FB5C7D25DD7AAE00105A2B /* PBXTargetDependency */,
+			);
+			name = SmileOnlineProjectTests;
+			productName = SmileOnlineProjectTests;
+			productReference = A6FB5C7B25DD7AAE00105A2B /* SmileOnlineProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A6FB5C8525DD7AAF00105A2B /* SmileOnlineProjectUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6FB5C9525DD7AAF00105A2B /* Build configuration list for PBXNativeTarget "SmileOnlineProjectUITests" */;
+			buildPhases = (
+				2B7D725707A14FF2E173A482 /* [CP] Check Pods Manifest.lock */,
+				A6FB5C8225DD7AAF00105A2B /* Sources */,
+				A6FB5C8325DD7AAF00105A2B /* Frameworks */,
+				A6FB5C8425DD7AAF00105A2B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6FB5C8825DD7AAF00105A2B /* PBXTargetDependency */,
+			);
+			name = SmileOnlineProjectUITests;
+			productName = SmileOnlineProjectUITests;
+			productReference = A6FB5C8625DD7AAF00105A2B /* SmileOnlineProjectUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A6FB5C5A25DD7AAC00105A2B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					A6FB5C6125DD7AAC00105A2B = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					A6FB5C7A25DD7AAE00105A2B = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = A6FB5C6125DD7AAC00105A2B;
+					};
+					A6FB5C8525DD7AAF00105A2B = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = A6FB5C6125DD7AAC00105A2B;
+					};
+				};
+			};
+			buildConfigurationList = A6FB5C5D25DD7AAC00105A2B /* Build configuration list for PBXProject "SmileOnlineProject" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A6FB5C5925DD7AAC00105A2B;
+			productRefGroup = A6FB5C6325DD7AAC00105A2B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A6FB5C6125DD7AAC00105A2B /* SmileOnlineProject */,
+				A6FB5C7A25DD7AAE00105A2B /* SmileOnlineProjectTests */,
+				A6FB5C8525DD7AAF00105A2B /* SmileOnlineProjectUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A6FB5C6025DD7AAC00105A2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6FB5C7525DD7AAE00105A2B /* LaunchScreen.storyboard in Resources */,
+				A6BD442F25E0438400006286 /* GoogleService-Info.plist in Resources */,
+				A6C7F5482601307F00865D9E /* CollectionViewCell.xib in Resources */,
+				A6FB5C7225DD7AAE00105A2B /* Assets.xcassets in Resources */,
+				A6FB5C6D25DD7AAC00105A2B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6FB5C7925DD7AAE00105A2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6FB5C8425DD7AAF00105A2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B7D725707A14FF2E173A482 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmileOnlineProjectUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		46330BD66FE7A115C310DF6F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmileOnlineProject/Pods-SmileOnlineProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmileOnlineProject/Pods-SmileOnlineProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SmileOnlineProject/Pods-SmileOnlineProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E9FE865FCAFDC399D745949 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmileOnlineProjectTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E59DA19BE2BE848C4A8A909E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmileOnlineProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A6FB5C5E25DD7AAC00105A2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA6C5E6225E82D760073FFE5 /* VerifyingViewController.swift in Sources */,
+				A6FB5C6A25DD7AAC00105A2B /* ViewController.swift in Sources */,
+				FA6C5E6B25E83A060073FFE5 /* CollectionViewCell.swift in Sources */,
+				A6BD442A25E0401E00006286 /* SigningViewController.swift in Sources */,
+				A6FB5C7025DD7AAC00105A2B /* SmileOnlineProject.xcdatamodeld in Sources */,
+				FAF60CD025F35D4F009893A7 /* HistoryViewController.swift in Sources */,
+				A6C7F52625FFF3E400865D9E /* TutorialViewController.swift in Sources */,
+				FADA7C7D25EECBE9005FCDD0 /* ClientInfoViewController.swift in Sources */,
+				FA6C5E6825E8376F0073FFE5 /* ImagePickerManager.swift in Sources */,
+				A6B8A30726055F7F00B7BDE9 /* QuestionsViewController.swift in Sources */,
+				A6B8A3152605677F00B7BDE9 /* TestViewController.swift in Sources */,
+				FA6C5E6425E832960073FFE5 /* PhotosViewController.swift in Sources */,
+				A6FB5C6625DD7AAC00105A2B /* AppDelegate.swift in Sources */,
+				A6FB5C6825DD7AAC00105A2B /* SceneDelegate.swift in Sources */,
+				FA67AD3F25F366C000DE97FC /* ResultViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6FB5C7725DD7AAE00105A2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6FB5C8025DD7AAE00105A2B /* SmileOnlineProjectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6FB5C8225DD7AAF00105A2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6FB5C8B25DD7AAF00105A2B /* SmileOnlineProjectUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A6FB5C7D25DD7AAE00105A2B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6FB5C6125DD7AAC00105A2B /* SmileOnlineProject */;
+			targetProxy = A6FB5C7C25DD7AAE00105A2B /* PBXContainerItemProxy */;
+		};
+		A6FB5C8825DD7AAF00105A2B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6FB5C6125DD7AAC00105A2B /* SmileOnlineProject */;
+			targetProxy = A6FB5C8725DD7AAF00105A2B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A6FB5C6B25DD7AAC00105A2B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6FB5C6C25DD7AAC00105A2B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A6FB5C7325DD7AAE00105A2B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6FB5C7425DD7AAE00105A2B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A6FB5C8D25DD7AAF00105A2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A6FB5C8E25DD7AAF00105A2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A6FB5C9025DD7AAF00105A2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62F991FA73138543B650924C /* Pods-SmileOnlineProject.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8R6WQM9KWN;
+				INFOPLIST_FILE = SmileOnlineProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SileOnline.SmileOnlineProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A6FB5C9125DD7AAF00105A2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC542F188CB1E9F7302246F0 /* Pods-SmileOnlineProject.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8R6WQM9KWN;
+				INFOPLIST_FILE = SmileOnlineProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SileOnline.SmileOnlineProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A6FB5C9325DD7AAF00105A2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC1D4AF37D857043FF32078E /* Pods-SmileOnlineProjectTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SmileOnlineProjectTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SileOnline.SmileOnlineProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmileOnlineProject.app/SmileOnlineProject";
+			};
+			name = Debug;
+		};
+		A6FB5C9425DD7AAF00105A2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C1BE676300137576D7C71C1 /* Pods-SmileOnlineProjectTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SmileOnlineProjectTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SileOnline.SmileOnlineProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmileOnlineProject.app/SmileOnlineProject";
+			};
+			name = Release;
+		};
+		A6FB5C9625DD7AAF00105A2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 204B0CEE8AD1C488CDC68131 /* Pods-SmileOnlineProjectUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SmileOnlineProjectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SileOnline.SmileOnlineProjectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SmileOnlineProject;
+			};
+			name = Debug;
+		};
+		A6FB5C9725DD7AAF00105A2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A60ACCD076F890FB9EFD9F3 /* Pods-SmileOnlineProjectUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SmileOnlineProjectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SileOnline.SmileOnlineProjectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SmileOnlineProject;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A6FB5C5D25DD7AAC00105A2B /* Build configuration list for PBXProject "SmileOnlineProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6FB5C8D25DD7AAF00105A2B /* Debug */,
+				A6FB5C8E25DD7AAF00105A2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6FB5C8F25DD7AAF00105A2B /* Build configuration list for PBXNativeTarget "SmileOnlineProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6FB5C9025DD7AAF00105A2B /* Debug */,
+				A6FB5C9125DD7AAF00105A2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6FB5C9225DD7AAF00105A2B /* Build configuration list for PBXNativeTarget "SmileOnlineProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6FB5C9325DD7AAF00105A2B /* Debug */,
+				A6FB5C9425DD7AAF00105A2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6FB5C9525DD7AAF00105A2B /* Build configuration list for PBXNativeTarget "SmileOnlineProjectUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6FB5C9625DD7AAF00105A2B /* Debug */,
+				A6FB5C9725DD7AAF00105A2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A6FB5C6E25DD7AAC00105A2B /* SmileOnlineProject.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A6FB5C6F25DD7AAC00105A2B /* SmileOnlineProject.xcdatamodel */,
+			);
+			currentVersion = A6FB5C6F25DD7AAC00105A2B /* SmileOnlineProject.xcdatamodel */;
+			path = SmileOnlineProject.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A6FB5C5A25DD7AAC00105A2B /* Project object */;
+}
