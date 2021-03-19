@@ -27,14 +27,7 @@ class PhotosViewController: UIViewController, UICollectionViewDelegate, UICollec
         collectionView.dataSource = self
         collectionView.register(UINib(nibName: "CollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "collectionViewCell")
     }
-    /*
     
-    @IBAction func tutorialVideo(_ sender: Any) {
-        
-        guard let url = URL(string: "https://youtu.be/_kxgKzuD7Cg") else { return }
-        UIApplication.shared.open(url)
-    }
-    */
     
     @IBAction func enterTapped(_ sender: UIButton) {
         if photos.count == 5 || nameTF.text == ""{
@@ -47,17 +40,12 @@ class PhotosViewController: UIViewController, UICollectionViewDelegate, UICollec
         
             
         } else {
-            let alert = UIAlertController(title: "Вы не загрузили нужное количество фотографий", message: nil, preferredStyle: .alert)
+            let alert = UIAlertController(title: "Вы не загрузили нужное количество фотографий или не ввели имя", message: nil, preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Хорошо", style: .default))
             present(alert, animated: true)
         }
     }
     
-    func sendPhoto(_ photos: [UIImage]) {
-        // send photos to the next screen
-        
-        
-    }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 5
@@ -84,20 +72,71 @@ class PhotosViewController: UIViewController, UICollectionViewDelegate, UICollec
             cell.imageView.image = image
         }
     }
-    
-    func dialNumber(number : String) {
 
-     if let url = URL(string: "tel://\(number)"),
-       UIApplication.shared.canOpenURL(url) {
-          if #available(iOS 10, *) {
-            UIApplication.shared.open(url, options: [:], completionHandler:nil)
-           } else {
-               UIApplication.shared.openURL(url)
-           }
-       } else {
-                // add error message here
-       }
-    }
-    
+override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    self.view.endEditing(true)
 }
 
+
+func sendPhotos() {
+    
+    //Отправка фотографий на сервер
+    let storageRef = self.storage.reference()
+    
+    let date = DateFormatter()
+    date.dateFormat = "dd.MM.yy"
+    
+    
+    let metaData = StorageMetadata()
+    metaData.contentType = "image/jpg"
+    
+    var i = 1
+    for photo in photos {
+        
+        let filePath = "users/\(Auth.auth().currentUser!.uid)/\(nameTF.text!) \(date.string(from: Date(timeIntervalSinceNow: 0)))/photo\(i)"
+        let photosRef = storageRef.child(filePath)
+        
+        var data = Data()
+        data = photo.jpegData(compressionQuality: 0.8)!
+        i += 1
+        
+        photosRef.putData(data, metadata: metaData) { (metadata, error) in
+            guard let metadata = metadata else {
+                // Uh-oh, an error occurred!
+                print(error!.localizedDescription)
+                return
+            }
+            // Metadata contains file metadata such as size, content-type.
+            let size = metadata.size
+            print("photo size: \(size)")
+            
+            // You can also access to download URL after upload.
+            photosRef.downloadURL { (url, error) in
+                guard url != nil else {
+                    // Uh-oh, an error occurred!
+                    print(error!.localizedDescription)
+                    return
+                }
+            }
+        }
+    }
+    
+    //Запись клиента в удаленную базу данных
+    db.collection("users")
+        .document("\(Auth.auth().currentUser!.uid)")
+        .collection("clients")
+        .document("\(nameTF.text!) \(date.string(from: Date(timeIntervalSinceNow: 0)))")
+        .setData([
+        "name": nameTF.text!
+    ]) { err in
+        if let err = err {
+            print("Error writing document: \(err.localizedDescription)")
+        } else {
+            print("Document successfully written!")
+            
+            let waitingVC = self.storyboard?.instantiateViewController(withIdentifier: "WaitingViewController")
+            self.navigationController?.pushViewController(waitingVC!, animated: true)
+        }
+    }
+}
+}

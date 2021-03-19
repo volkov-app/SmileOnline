@@ -106,3 +106,11 @@ class ClientInfoViewController: UIViewController {
     }
     
 }
+/*
+
+@IBAction func tutorialVideo(_ sender: Any) {
+    
+    guard let url = URL(string: "https://youtu.be/_kxgKzuD7Cg") else { return }
+    UIApplication.shared.open(url)
+}
+*/
