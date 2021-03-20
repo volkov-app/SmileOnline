@@ -170,7 +170,6 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="nextTapped:" destination="2k5-lC-bz3" eventType="touchUpInside" id="plJ-um-28Z"/>
-                                    <segue destination="nkI-By-2t4" kind="show" id="rzn-eh-3MR"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z7l-qF-okK">
@@ -234,18 +233,18 @@
             <objects>
                 <viewController storyboardIdentifier="TutorialViewController" modalPresentationStyle="fullScreen" id="oir-l1-GLA" customClass="TutorialViewController" customModule="SmileOnlineProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="J4M-rO-Uid">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wUh-hH-jM8" customClass="WKYTPlayerView">
-                                <rect key="frame" x="28" y="183" width="354" height="259"/>
+                                <rect key="frame" x="28" y="139" width="354" height="259"/>
                                 <color key="backgroundColor" systemColor="systemGray3Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="259" id="6jl-c3-UvG"/>
                                 </constraints>
                             </view>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7mO-dy-Vr3">
-                                <rect key="frame" x="30" y="472" width="354" height="40"/>
+                                <rect key="frame" x="30" y="428" width="354" height="40"/>
                                 <color key="backgroundColor" red="0.29411764709999999" green="0.27058823529999998" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="BV8-Gb-NLd"/>
@@ -264,7 +263,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Fm-ui-s2V">
-                                <rect key="frame" x="30" y="74" width="354" height="79"/>
+                                <rect key="frame" x="30" y="30" width="354" height="79"/>
                                 <string key="text">Сделайте фотографию улыбки на смартфон. Посмотрите видео
 “Как правильно сделать фото”</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
@@ -307,7 +306,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yoz-HC-ayi">
-                                <rect key="frame" x="30" y="59" width="354" height="79"/>
+                                <rect key="frame" x="30" y="15" width="354" height="79"/>
                                 <string key="text">За 5 минут мы покажем
 вам или вашему клиенту идеальную улыбку</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
@@ -315,7 +314,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Отправьте нам 5 фото на телефон и через 5 минут мы расскажем варианты исправления прикуса. Используйте шаблоны снизу" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NxW-1e-A4p">
-                                <rect key="frame" x="64.666666666666686" y="154" width="285" height="102"/>
+                                <rect key="frame" x="64.666666666666686" y="110" width="285" height="102"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="285" id="ItU-f9-mc0"/>
                                     <constraint firstAttribute="height" constant="102" id="eQC-Zk-zZ1"/>
@@ -343,7 +342,7 @@
                                 </connections>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="T9b-TL-bow">
-                                <rect key="frame" x="76.666666666666686" y="286" width="261" height="174"/>
+                                <rect key="frame" x="76.666666666666686" y="242" width="261" height="174"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="174" id="Usg-S1-1rm"/>
@@ -400,7 +399,7 @@
                                 </cells>
                             </collectionView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Введите имя и фамилию" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WSi-iU-A5G">
-                                <rect key="frame" x="30" y="490" width="354" height="33.333333333333371"/>
+                                <rect key="frame" x="30" y="446" width="354" height="33.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" keyboardType="phonePad" textContentType="tel"/>
                             </textField>
@@ -438,7 +437,7 @@
         <!--View Controller-->
         <scene sceneID="OK5-ik-tyb">
             <objects>
-                <viewController storyboardIdentifier="WaitingViewController" id="gBI-vE-Hpj" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WaitingViewController" modalPresentationStyle="fullScreen" id="gBI-vE-Hpj" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="29B-ho-4rn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -485,12 +484,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a1z-Jk-fDV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7997.1014492753629" y="394.56521739130437"/>
+            <point key="canvasLocation" x="8065" y="1145"/>
         </scene>
         <!--Result View Controller-->
         <scene sceneID="zeP-t5-KqA">
             <objects>
-                <viewController storyboardIdentifier="ResultViewController" id="pO7-lz-GkE" customClass="ResultViewController" customModule="SmileOnlineProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ResultViewController" modalPresentationStyle="fullScreen" id="pO7-lz-GkE" customClass="ResultViewController" customModule="SmileOnlineProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="teB-WG-Ild">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -566,7 +565,7 @@
                                 </constraints>
                                 <state key="normal" backgroundImage="closeIcon"/>
                                 <connections>
-                                    <segue destination="zfV-3M-vad" kind="show" id="2Yp-7N-ZB8"/>
+                                    <action selector="FistView:" destination="pO7-lz-GkE" eventType="touchUpInside" id="USK-v3-MXq"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -591,21 +590,24 @@
                             <constraint firstItem="oUN-Bd-UNy" firstAttribute="trailing" secondItem="Yzt-xb-Awo" secondAttribute="trailing" constant="35" id="xCq-sY-icm"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="exq-1P-gYJ" kind="show" identifier="tabBar" id="8eA-OC-d8O"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2w1-zZ-EKb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8856.5217391304359" y="394.56521739130437"/>
+            <point key="canvasLocation" x="7991" y="395"/>
         </scene>
         <!--Я врач-->
         <scene sceneID="aTu-1N-jKM">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="3wH-6b-RIw" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JI9-H0-Jfe">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Мы рады быть вам полезны" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xxo-pE-SbZ">
-                                <rect key="frame" x="30" y="74" width="354" height="68"/>
+                                <rect key="frame" x="30" y="30" width="354" height="68"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="68" id="vs7-jw-DpJ"/>
                                 </constraints>
@@ -614,7 +616,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fkv-eU-SI5">
-                                <rect key="frame" x="30" y="569" width="354" height="40"/>
+                                <rect key="frame" x="30" y="549" width="354" height="40"/>
                                 <color key="backgroundColor" red="0.29411764705882354" green="0.27058823529411763" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Xds-IZ-qWo"/>
@@ -629,7 +631,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F03-Cn-7sw">
-                                <rect key="frame" x="30" y="627" width="354" height="40"/>
+                                <rect key="frame" x="30" y="607" width="354" height="40"/>
                                 <color key="backgroundColor" red="0.29411764705882354" green="0.27058823529411763" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="0fz-yS-6ry"/>
@@ -644,7 +646,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wRP-Qs-Jxn">
-                                <rect key="frame" x="30" y="395" width="354" height="40"/>
+                                <rect key="frame" x="30" y="375" width="354" height="40"/>
                                 <color key="backgroundColor" red="0.29411764705882354" green="0.27058823529411763" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="oJl-a9-ZN4"/>
@@ -659,7 +661,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0qj-F6-w0w">
-                                <rect key="frame" x="30" y="511" width="354" height="40"/>
+                                <rect key="frame" x="30" y="491" width="354" height="40"/>
                                 <color key="backgroundColor" red="0.29411764705882354" green="0.27058823529411763" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="tYe-3M-Zzt"/>
@@ -674,7 +676,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bfi-Zd-DY9">
-                                <rect key="frame" x="30" y="453" width="354" height="40"/>
+                                <rect key="frame" x="30" y="433" width="354" height="40"/>
                                 <color key="backgroundColor" red="0.29411764705882354" green="0.27058823529411763" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="MXi-Z2-huQ"/>
@@ -689,7 +691,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imdoctor" translatesAutoresizingMaskIntoConstraints="NO" id="zot-uU-8rf">
-                                <rect key="frame" x="7" y="158" width="400" height="130"/>
+                                <rect key="frame" x="7" y="114" width="400" height="130"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="130" id="Q7J-yD-0OH"/>
                                 </constraints>
@@ -887,16 +889,16 @@
             </objects>
             <point key="canvasLocation" x="4565" y="2081"/>
         </scene>
-        <!--Test View Controller-->
+        <!--Questions View Controller-->
         <scene sceneID="Fw3-Rx-3Qq">
             <objects>
-                <viewController id="nkI-By-2t4" customClass="TestViewController" customModule="SmileOnlineProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="QuestionsViewController" id="nkI-By-2t4" customClass="QuestionsViewController" customModule="SmileOnlineProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sCE-Gy-nLO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LJ2-sZ-WZs">
-                                <rect key="frame" x="30" y="130.33333333333334" width="354" height="40"/>
+                                <rect key="frame" x="30" y="86.333333333333329" width="354" height="40"/>
                                 <color key="backgroundColor" red="0.29411764709999999" green="0.27058823529999998" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="DHO-Uh-Fp3"/>
@@ -915,14 +917,14 @@
                                 </connections>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WcS-5J-I8K">
-                                <rect key="frame" x="30" y="200.33333333333334" width="354" height="40"/>
+                                <rect key="frame" x="30" y="156.33333333333334" width="354" height="40"/>
                                 <color key="backgroundColor" red="0.29411764709999999" green="0.27058823529999998" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Kro-jm-xV2"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="tintColor" systemColor="systemGray6Color"/>
-                                <state key="normal" title="Я Lоктор"/>
+                                <state key="normal" title="Я доктор"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <integer key="value" value="10"/>
@@ -934,7 +936,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Расскажите нам о себе" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z9H-wr-uA6">
-                                <rect key="frame" x="30" y="74" width="354" height="26.333333333333329"/>
+                                <rect key="frame" x="30" y="30" width="354" height="26.333333333333329"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -962,7 +964,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LPM-OK-7c6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3013" y="395"/>
+            <point key="canvasLocation" x="2993" y="395"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="zcz-xy-5AR">
@@ -987,6 +989,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="8eA-OC-d8O"/>
         <segue reference="uwF-kF-an0"/>
     </inferredMetricsTieBreakers>
     <resources>

@@ -10,7 +10,6 @@
 		631DC901B8812E34A31D31B6 /* Pods_SmileOnlineProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CCF983D9D21824A29B19B75 /* Pods_SmileOnlineProjectTests.framework */; };
 		9542A969608F8776FDF8FF0D /* Pods_SmileOnlineProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B91953600922CFE6D2461371 /* Pods_SmileOnlineProjectUITests.framework */; };
 		A6B8A30726055F7F00B7BDE9 /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B8A30626055F7F00B7BDE9 /* QuestionsViewController.swift */; };
-		A6B8A3152605677F00B7BDE9 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B8A3142605677F00B7BDE9 /* TestViewController.swift */; };
 		A6BD442A25E0401E00006286 /* SigningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BD442925E0401E00006286 /* SigningViewController.swift */; };
 		A6BD442F25E0438400006286 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A6BD442E25E0438400006286 /* GoogleService-Info.plist */; };
 		A6C7F52625FFF3E400865D9E /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C7F52525FFF3E400865D9E /* TutorialViewController.swift */; };
@@ -58,7 +57,6 @@
 		9C1BE676300137576D7C71C1 /* Pods-SmileOnlineProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmileOnlineProjectTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmileOnlineProjectTests/Pods-SmileOnlineProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 		9CCF983D9D21824A29B19B75 /* Pods_SmileOnlineProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmileOnlineProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6B8A30626055F7F00B7BDE9 /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
-		A6B8A3142605677F00B7BDE9 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		A6BD442925E0401E00006286 /* SigningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigningViewController.swift; sourceTree = "<group>"; };
 		A6BD442E25E0438400006286 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A6C7F52525FFF3E400865D9E /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
@@ -171,7 +169,6 @@
 				A6FB5C6525DD7AAC00105A2B /* AppDelegate.swift */,
 				A6FB5C6725DD7AAC00105A2B /* SceneDelegate.swift */,
 				A6FB5C6B25DD7AAC00105A2B /* Main.storyboard */,
-				A6B8A3142605677F00B7BDE9 /* TestViewController.swift */,
 				A6FB5C7125DD7AAE00105A2B /* Assets.xcassets */,
 				A6FB5C7325DD7AAE00105A2B /* LaunchScreen.storyboard */,
 				A6FB5C7625DD7AAE00105A2B /* Info.plist */,
@@ -438,7 +435,6 @@
 				FADA7C7D25EECBE9005FCDD0 /* ClientInfoViewController.swift in Sources */,
 				FA6C5E6825E8376F0073FFE5 /* ImagePickerManager.swift in Sources */,
 				A6B8A30726055F7F00B7BDE9 /* QuestionsViewController.swift in Sources */,
-				A6B8A3152605677F00B7BDE9 /* TestViewController.swift in Sources */,
 				FA6C5E6425E832960073FFE5 /* PhotosViewController.swift in Sources */,
 				A6FB5C6625DD7AAC00105A2B /* AppDelegate.swift in Sources */,
 				A6FB5C6825DD7AAC00105A2B /* SceneDelegate.swift in Sources */,

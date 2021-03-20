@@ -14,39 +14,68 @@ class PhotosViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     @IBOutlet weak var nameTF: UITextField!
     
+    var activityIndicator: UIActivityIndicatorView = {
+        let activity = UIActivityIndicatorView()
+        activity.translatesAutoresizingMaskIntoConstraints = false
+        activity.bounds = CGRect(x: 0, y: 0, width: 45, height: 45)
+        activity.isHidden = true
+        return activity
+    }()
     
+    //скокращение
     let storage = Storage.storage()
     let db = Firestore.firestore()
     
-    let standartPhotos: [UIImage] = [#imageLiteral(resourceName: "1-removebg-preview"),#imageLiteral(resourceName: "3-removebg-preview"),#imageLiteral(resourceName: "2-removebg-preview"),#imageLiteral(resourceName: "4-removebg-preview"),#imageLiteral(resourceName: "5-removebg-preview")]
+    //фото для collectionView
+    let standartPhotos: [UIImage] = [#imageLiteral(resourceName: "onboarding1"),#imageLiteral(resourceName: "onboarding1"),#imageLiteral(resourceName: "onboarding1"),#imageLiteral(resourceName: "4-removebg-preview"),#imageLiteral(resourceName: "5-removebg-preview")]
+    let placeholderPhotos: [UIImage] = [#imageLiteral(resourceName: "1-removebg-preview"),#imageLiteral(resourceName: "3-removebg-preview"),#imageLiteral(resourceName: "2-removebg-preview"),#imageLiteral(resourceName: "4-removebg-preview"),#imageLiteral(resourceName: "5-removebg-preview")]
+    //фото загруженное через камеру или галерею
     var photos: [UIImage] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //activityIndicator.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        //activityIndicator.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        
+        //присваиваем делигаты
         collectionView.delegate = self
         collectionView.dataSource = self
+        
+        //регистрируем ячейку
         collectionView.register(UINib(nibName: "CollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "collectionViewCell")
     }
     
-    
+    //при нажатии кнопки
     @IBAction func enterTapped(_ sender: UIButton) {
-        if photos.count == 5 || nameTF.text == ""{
-            
-            
-            let nextVC = storyboard?.instantiateViewController(withIdentifier: "ClientInfoViewController") as! ClientInfoViewController
-            nextVC.photos = photos
-            navigationController?.pushViewController(nextVC, animated: true)
         
-        
+        //пишем условия
+        if nameTF.text == ""{
             
-        } else {
-            let alert = UIAlertController(title: "Вы не загрузили нужное количество фотографий или не ввели имя", message: nil, preferredStyle: .alert)
+            
+            //выводим предупреждение в случае ошибки
+            let alert = UIAlertController(title: "Вы не ввели имя", message: nil, preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Хорошо", style: .default))
             present(alert, animated: true)
+        
+        
+            
+        } else if photos.count == 5 {
+            
+            activityIndicator.isHidden = false
+            activityIndicator.startAnimating()
+            sendPhotos()
+            
+        } else {
+        
+        //выводим предупреждение в случае ошибки
+        let alert = UIAlertController(title: "Вы не загрузили все нужные фотографии", message: nil, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Хорошо", style: .default))
+        present(alert, animated: true)
         }
     }
     
-    
+    //для создания ячеек
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 5
     }
@@ -61,7 +90,7 @@ class PhotosViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let cell = collectionView.cellForItem(at: indexPath) as! CollectionViewCell
-        let filterView = UIImageView(image: standartPhotos[indexPath.row])
+        let filterView = UIImageView(image: placeholderPhotos[indexPath.row])
         filterView.center = view.center
        // filterView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
 
@@ -72,7 +101,7 @@ class PhotosViewController: UIViewController, UICollectionViewDelegate, UICollec
             cell.imageView.image = image
         }
     }
-
+//для закрытия клавиатуры
 override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
     self.view.endEditing(true)
 }
@@ -82,20 +111,24 @@ func sendPhotos() {
     
     //Отправка фотографий на сервер
     let storageRef = self.storage.reference()
-    
+    //запоминаем дату
     let date = DateFormatter()
     date.dateFormat = "dd.MM.yy"
     
-    
+    //записываем тип фотографии
     let metaData = StorageMetadata()
     metaData.contentType = "image/jpg"
+    
     
     var i = 1
     for photo in photos {
         
+        
+        //показываем путь куда сохранить
         let filePath = "users/\(Auth.auth().currentUser!.uid)/\(nameTF.text!) \(date.string(from: Date(timeIntervalSinceNow: 0)))/photo\(i)"
         let photosRef = storageRef.child(filePath)
         
+        //конвертируем тип фотографии в тип Data
         var data = Data()
         data = photo.jpegData(compressionQuality: 0.8)!
         i += 1
@@ -134,8 +167,12 @@ func sendPhotos() {
         } else {
             print("Document successfully written!")
             
-            let waitingVC = self.storyboard?.instantiateViewController(withIdentifier: "WaitingViewController")
-            self.navigationController?.pushViewController(waitingVC!, animated: true)
+//            activityIndicator.isHidden = true
+//            activityIndicator.stopAnimating()
+            
+            //делаем переход
+            let waitingVC = self.storyboard?.instantiateViewController(withIdentifier: "ResultViewController")
+            self.present(waitingVC!, animated: true)
         }
     }
 }

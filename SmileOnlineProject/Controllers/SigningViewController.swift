@@ -41,6 +41,7 @@ class SigningViewController: UIViewController, UITextFieldDelegate{
         PhoneAuthProvider.provider().verifyPhoneNumber(phone, uiDelegate: nil) { (verificationID, error) in
           if let error = error {
             print(error.localizedDescription)
+            
             return
           }
           // Sign in using the verificationID and the code sent to the user
