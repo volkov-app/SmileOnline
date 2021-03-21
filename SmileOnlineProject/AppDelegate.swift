@@ -69,6 +69,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //loginByVerificationCode()
         
         
+        
+        
         // Override point for customization after application launch.
         return true
     }

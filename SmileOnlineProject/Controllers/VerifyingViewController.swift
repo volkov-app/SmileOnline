@@ -90,12 +90,14 @@ class VerifyingViewController: UIViewController {
           }
           // User is signed in
           // ...
+    
             let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "QuestionsViewController")
             vc.modalPresentationStyle = .fullScreen
             self.present(vc, animated: true)
             
             print(authResult!.user.uid)
-        }
+            UserDefaults.standard.set(authResult!.user.uid, forKey: "authID")
+            }
     }
     
 

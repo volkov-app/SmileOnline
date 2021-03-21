@@ -19,10 +19,21 @@ class ViewController: UIViewController{
     var indexOnboarding = 0
     
     override func viewDidLoad() {
+        
+        
+        
         onboadingLabel.text = labelArray.first
         onboardingImage.image = imageArray.first!
         onboardingButton.setTitle(buttonArray.first!, for: .normal)
         indexOnboarding += 1
+//        
+//        if UserDefaults.standard.string(forKey: "authID") != nil {
+//        
+//            let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "QuestionsViewController") as! QuestionsViewController
+//            vc.modalPresentationStyle = .fullScreen
+//            self.present(vc, animated: true)
+//        }
+        
     }
     @IBAction func onboardingTapped(_ sender: Any) {
         
