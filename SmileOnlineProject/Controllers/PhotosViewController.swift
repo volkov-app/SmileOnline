@@ -27,7 +27,7 @@ class PhotosViewController: UIViewController, UICollectionViewDelegate, UICollec
     let db = Firestore.firestore()
     
     //фото для collectionView
-    let standartPhotos: [UIImage] = [#imageLiteral(resourceName: "onboarding1"),#imageLiteral(resourceName: "onboarding1"),#imageLiteral(resourceName: "onboarding1"),#imageLiteral(resourceName: "4-removebg-preview"),#imageLiteral(resourceName: "5-removebg-preview")]
+    let standartPhotos: [UIImage] = [#imageLiteral(resourceName: "tutor1"),#imageLiteral(resourceName: "tutor2"),#imageLiteral(resourceName: "tutor3"),#imageLiteral(resourceName: "tutor5"),#imageLiteral(resourceName: "tutor4")]
     let placeholderPhotos: [UIImage] = [#imageLiteral(resourceName: "1-removebg-preview"),#imageLiteral(resourceName: "3-removebg-preview"),#imageLiteral(resourceName: "2-removebg-preview"),#imageLiteral(resourceName: "4-removebg-preview"),#imageLiteral(resourceName: "5-removebg-preview")]
     //фото загруженное через камеру или галерею
     var photos: [UIImage] = []
