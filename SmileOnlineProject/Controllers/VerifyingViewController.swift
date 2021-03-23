@@ -53,41 +53,13 @@ class VerifyingViewController: UIViewController {
         guard let verificationCode = codeTF.text else { return }
         UserDefaults.standard.set(verificationCode, forKey: "authVerificationCode")
         
-        guard let verificationID = UserDefaults.standard.string(forKey: "authVerificationID") else { return }
-
-        let credential = PhoneAuthProvider.provider().credential(
-        withVerificationID: verificationID,
-        verificationCode: verificationCode)
-
-        Auth.auth().signIn(with: credential) { (authResult, error) in
-          if let error = error {
-            let authError = error as NSError
-            if (authError.code == AuthErrorCode.secondFactorRequired.rawValue) {
-              // The user is a multi-factor user. Second factor challenge is required.
-              let resolver = authError.userInfo[AuthErrorUserInfoMultiFactorResolverKey] as! MultiFactorResolver
-              var displayNameString = ""
-              for tmpFactorInfo in (resolver.hints) {
-                displayNameString += tmpFactorInfo.displayName ?? ""
-                displayNameString += " "
-              }
-              
-            } else {
-                let alert = UIAlertController(title: "Неверный код", message: "Проверьте правильность или запросите новый", preferredStyle: .alert)
-                let alertAction1 = UIAlertAction(title: "ОК", style: .default)
-                let alertAction2 = UIAlertAction(title: "Отправить повторно", style: .default) { (_) in
-                    self.sendOTP()
-                }
-                alert.addAction(alertAction1)
-                alert.addAction(alertAction2)
-                
-                self.present(alert, animated: true)
-                
-              print(error.localizedDescription)
-              return
-            }
-            // ...
-            return
-          }
+        guard UserDefaults.standard.string(forKey: "authVerificationID") != nil else { return }
+ 
+//              return
+//            }
+//            // ...
+//            return
+//          }
           // User is signed in
           // ...
     
@@ -95,10 +67,10 @@ class VerifyingViewController: UIViewController {
             vc.modalPresentationStyle = .fullScreen
             self.present(vc, animated: true)
             
-            print(authResult!.user.uid)
-            UserDefaults.standard.set(authResult!.user.uid, forKey: "authID")
+           // print(authResult!.user.uid)
+                UserDefaults.standard.set( authResult!.user.uid, forKey: "authID")
             }
     }
     
 
-}
+//}
