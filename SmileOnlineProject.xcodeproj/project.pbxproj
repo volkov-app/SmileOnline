@@ -14,6 +14,8 @@
 		A64AB28726262393006D0961 /* AdminConcole.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64AB28626262393006D0961 /* AdminConcole.swift */; };
 		A64AB2A92629EFE7006D0961 /* AdminConcoleClients.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64AB2A82629EFE7006D0961 /* AdminConcoleClients.swift */; };
 		A64AB3042629FBE1006D0961 /* AdminConcoleDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64AB3032629FBE1006D0961 /* AdminConcoleDetail.swift */; };
+		A65AF3722658FDB700F943FC /* UIView extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65AF3712658FDB700F943FC /* UIView extention.swift */; };
+		A65AF377265919C200F943FC /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65AF376265919C200F943FC /* MenuTableViewController.swift */; };
 		A6637B46261F76AC0000515C /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6637B45261F76AC0000515C /* FirebaseManager.swift */; };
 		A6830DAA2655A2690035757F /* TipeSignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6830DA92655A2690035757F /* TipeSignInViewController.swift */; };
 		A68D18A8262CB700005001F4 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68D18A7262CB6FF005001F4 /* UIImageViewExtension.swift */; };
@@ -70,6 +72,8 @@
 		A64AB28626262393006D0961 /* AdminConcole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminConcole.swift; sourceTree = "<group>"; };
 		A64AB2A82629EFE7006D0961 /* AdminConcoleClients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminConcoleClients.swift; sourceTree = "<group>"; };
 		A64AB3032629FBE1006D0961 /* AdminConcoleDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminConcoleDetail.swift; sourceTree = "<group>"; };
+		A65AF3712658FDB700F943FC /* UIView extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView extention.swift"; sourceTree = "<group>"; };
+		A65AF376265919C200F943FC /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		A6637B45261F76AC0000515C /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		A6830DA92655A2690035757F /* TipeSignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipeSignInViewController.swift; sourceTree = "<group>"; };
 		A68D18A7262CB6FF005001F4 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
@@ -162,7 +166,6 @@
 		A6FB5C5925DD7AAC00105A2B = {
 			isa = PBXGroup;
 			children = (
-				A6830DA92655A2690035757F /* TipeSignInViewController.swift */,
 				A6FB5C6425DD7AAC00105A2B /* SmileOnlineProject */,
 				A6FB5C7E25DD7AAE00105A2B /* SmileOnlineProjectTests */,
 				A6FB5C8925DD7AAF00105A2B /* SmileOnlineProjectUITests */,
@@ -189,6 +192,8 @@
 				FAF60CD125F35D56009893A7 /* Controllers */,
 				A6FB5C6725DD7AAC00105A2B /* SceneDelegate.swift */,
 				A6FB5C6B25DD7AAC00105A2B /* Main.storyboard */,
+				A65AF376265919C200F943FC /* MenuTableViewController.swift */,
+				A65AF3712658FDB700F943FC /* UIView extention.swift */,
 				A6FB5C7125DD7AAE00105A2B /* Assets.xcassets */,
 				A6E231BA26447548004FD390 /* AppDelegate.swift */,
 				A6FB5C7325DD7AAE00105A2B /* LaunchScreen.storyboard */,
@@ -240,6 +245,7 @@
 				A64AB2A82629EFE7006D0961 /* AdminConcoleClients.swift */,
 				A64AB3032629FBE1006D0961 /* AdminConcoleDetail.swift */,
 				A6173CF22658023000E5C0DE /* MenuViewController.swift */,
+				A6830DA92655A2690035757F /* TipeSignInViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -472,6 +478,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A65AF3722658FDB700F943FC /* UIView extention.swift in Sources */,
 				A6E231BB26447549004FD390 /* AppDelegate.swift in Sources */,
 				FA6C5E6225E82D760073FFE5 /* VerifyingViewController.swift in Sources */,
 				A6FB5C6A25DD7AAC00105A2B /* ViewController.swift in Sources */,
@@ -488,6 +495,7 @@
 				FADA7C7D25EECBE9005FCDD0 /* ClientInfoViewController.swift in Sources */,
 				FA6C5E6825E8376F0073FFE5 /* ImagePickerManager.swift in Sources */,
 				A629585A260A74B900C8F33F /* DoctorViewController.swift in Sources */,
+				A65AF377265919C200F943FC /* MenuTableViewController.swift in Sources */,
 				A64AB2A92629EFE7006D0961 /* AdminConcoleClients.swift in Sources */,
 				A6B8A30726055F7F00B7BDE9 /* QuestionsViewController.swift in Sources */,
 				FA6C5E6425E832960073FFE5 /* PhotosViewController.swift in Sources */,

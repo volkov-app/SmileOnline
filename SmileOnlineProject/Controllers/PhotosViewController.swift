@@ -15,8 +15,8 @@ class PhotosViewController: UIViewController, UICollectionViewDelegate, UICollec
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var descriptionLable: UILabel!
     @IBOutlet weak var nameTF: UITextField!
-    
-    
+    @IBOutlet weak var nextButtonPressed: UIButton!
+    @IBOutlet weak var tutorialButtonPressed: UIButton!
     
     
     var isDoctor = false
@@ -46,23 +46,22 @@ class PhotosViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     override func viewDidLoad() {
         
-        //Делаем красивый текст филд
-        nameTF.layer.borderColor = UIColor.blue.cgColor
-        nameTF.layer.cornerRadius = 5.0
-        nameTF.layer.borderWidth = 1.0
-        nameTF.layer.masksToBounds = true
+        nextButtonPressed.dropShadow()
+        tutorialButtonPressed.dropShadow()
+        tutorialButtonPressed.layer.shadowColor = UIColor.yellow.cgColor
+        nameTF.textFieldUI()
         
         super.viewDidLoad()
         
-        if UserDefaults.standard.string(forKey: "authID") == nil {
-            loginOut.isHidden = true
-        } else { loginOut.isHidden = false}
-        
-        if isDoctor {
-            descriptionLable.text = descriptionArray[1]
-        } else {
-            descriptionLable.text = descriptionArray[0]
-        }
+//        if UserDefaults.standard.string(forKey: "authID") == nil {
+//            loginOut.isHidden = true
+//        } else { loginOut.isHidden = false}
+//        
+//        if isDoctor {
+//            descriptionLable.text = descriptionArray[1]
+//        } else {
+//            descriptionLable.text = descriptionArray[0]
+//        }
         
         
         //activityIndicator.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
@@ -223,13 +222,14 @@ class PhotosViewController: UIViewController, UICollectionViewDelegate, UICollec
         
         if UserDefaults.standard.string(forKey: "authID") != nil {
             
+            //Переход на экран результата
             FirebaseManager.instance.sendPhotos(photos: photos, cashClientName: nameTF.text!)
             vc = self.storyboard!.instantiateViewController(withIdentifier: "ResultViewController") as! ResultViewController
             
             
         } else {
             //переход на регистрацию
-            vc = self.storyboard!.instantiateViewController(withIdentifier: "SigningViewController") as! SigningViewController
+            vc = self.storyboard!.instantiateViewController(withIdentifier: "TipeSignInViewController") // as! TipeSignInViewController
         }
         self.navigationController?.present(vc, animated: true)
     }

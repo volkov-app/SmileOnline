@@ -10,7 +10,6 @@ import Firebase
 
 class QuestionsViewController: UIViewController {
 
-// Create a value for chosed view
 private var nextViewNumber = Int()
 
 override func viewDidLoad() {
@@ -22,7 +21,6 @@ override func viewDidLoad() {
         print("Error fetching FCM registration token: \(error)")
       } else if let token = token {
         print("FCM registration token: \(token)")
-       // self.fcmRegTokenMessage.text  = "Remote FCM registration token: \(token)"
       }
     }
     
