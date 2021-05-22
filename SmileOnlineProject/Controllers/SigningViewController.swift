@@ -10,6 +10,8 @@ import Firebase
 
 class SigningViewController: UIViewController, UITextFieldDelegate{
     
+    var isHistory = false
+    
     @IBOutlet weak var numberTF: UITextField!
     
     override func viewDidLoad() {
@@ -23,32 +25,23 @@ class SigningViewController: UIViewController, UITextFieldDelegate{
     }
     
     @IBAction func nextTapped(_ sender: UIButton) {
-        signUpByPhone()
+        guard let phone = numberTF.text else { return }
+        FirebaseManager.instance.signUpByPhone(phone: phone)
+        
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let phone = numberTF.text else { return }
+        if segue.identifier == "toCode" {
+            let nextVC = segue.destination as! VerifyingViewController
+            nextVC.phone = phone
+            nextVC.isHistory = isHistory
+            
+        }
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
     
-    func signUpByPhone() {
-        
-        guard let phone = numberTF.text else { return }
-        
-        UserDefaults.standard.set(phone, forKey: "phoneNumber")
-        
-        
-        
-        PhoneAuthProvider.provider().verifyPhoneNumber(phone, uiDelegate: nil) { (verificationID, error) in
-          if let error = error {
-            print(error.localizedDescription)
-            
-            return
-          }
-          // Sign in using the verificationID and the code sent to the user
-          // ...
-          UserDefaults.standard.set(verificationID, forKey: "authVerificationID")
-          print("No error")
-        }
-    }
 
 }

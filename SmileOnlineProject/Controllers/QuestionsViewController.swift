@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class QuestionsViewController: UIViewController {
 
@@ -14,39 +15,17 @@ private var nextViewNumber = Int()
 
 override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
-}
-
-override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    if segue.identifier == "tabBar" {
-
-        let nextView = segue.destination as! UITabBarController
-
-        switch (nextViewNumber) {
-        case 1:
-            nextView.selectedIndex = 0
-
-        case 2:
-            nextView.selectedIndex = 1
-        
-        case 3:
-            nextView.selectedIndex = 2
-            
-        default:
-            break
-        }
+    
+    
+    Messaging.messaging().token { token, error in
+      if let error = error {
+        print("Error fetching FCM registration token: \(error)")
+      } else if let token = token {
+        print("FCM registration token: \(token)")
+       // self.fcmRegTokenMessage.text  = "Remote FCM registration token: \(token)"
+      }
     }
+    
 }
 
-
-@IBAction func FistView(_ sender: UIButton) {
-    self.nextViewNumber = 1
-    self.performSegue(withIdentifier: "tabBar", sender: self)
-}
-
-@IBAction func SecontView(_ sender: UIButton) {
-    self.nextViewNumber = 2
-    self.performSegue(withIdentifier: "tabBar", sender: self)
-
-}
 }

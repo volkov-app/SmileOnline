@@ -10,24 +10,31 @@ import Firebase
 
 struct Client {
     var name: String
-//    var email: String
-//    var phone: String
-//    var date: Date
+    //    var email: String
+    //    var phone: String
+    //    var date: Date
     var link: String?
+    var hard: String?
     
-    init(name: String, link: String?) {
+    
+    init(name: String, link: String?, hard: String?) {
         self.name = name
-//        self.email = email
-//        self.phone = phone
-//        self.date = date
+        //        self.email = email
+        //        self.phone = phone
+        //        self.date = date
+        if let hard = hard {
+            self.hard = hard
+            
+        }
         if let link = link {
             self.link = link
+        
         }
     }
 }
 
 class HistoryViewController: UIViewController {
-
+    
     @IBOutlet weak var tableView: UITableView!
     
     let db = Firestore.firestore()
@@ -37,11 +44,43 @@ class HistoryViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.backBarButtonItem = UIBarButtonItem(
+            title: "Назад", style: .plain, target: nil, action: nil)
+        
+        
+        
         callDelegates()
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        getData()
+        
+        if UserDefaults.standard.string(forKey: "authID") == nil {
+            
+            let alert = UIAlertController(title: "Войдите в приложение", message: "Для просмотра своей истории, вам необходимо войти в приложение или зарегестрироваться", preferredStyle: .alert)
+            let alertAction1 = UIAlertAction(title: "Войти/зарегестрироваться", style: .default) { (_) in
+                
+                
+                let vc = self.storyboard!.instantiateViewController(withIdentifier: "SigningViewController") as! SigningViewController
+                vc.isHistory = true
+                self.navigationController?.present(vc, animated: true)
+            }
+            
+            let alertAction2 = UIAlertAction(title: "Вернуться назад", style: .default) { (_) in
+                
+                self.tabBarController?.selectedViewController = self.tabBarController?.viewControllers?[0]
+                
+                
+            }
+            
+            alert.addAction(alertAction1)
+            alert.addAction(alertAction2)
+            
+            self.present(alert, animated: true)
+        } else { getData() }
+        
+        // guard UserDefaults.standard.string(forKey: "authID") != nil else { return }
+        
+        
     }
     
     func callDelegates() {
@@ -53,7 +92,7 @@ class HistoryViewController: UIViewController {
         clients = []
         clientsDetails = []
         
-        let dbRef = db.collection("users").document(Auth.auth().currentUser!.uid).collection("clients")
+        let dbRef = db.collection("users").document(Auth.auth().currentUser!.uid).collection("clients").order(by: "date", descending: true)
         dbRef.getDocuments() { (querySnapshot, err) in
             if let err = err {
                 print("Error getting documents: \(err)")
@@ -61,20 +100,12 @@ class HistoryViewController: UIViewController {
                 for document in querySnapshot!.documents {
                     print("\(document.documentID) => \(document.data())")
                     
-         let data = document.data()
+                    let data = document.data()
                     
                     self.clients.append(document.documentID)
-//
-//                    let dateFormatter = DateFormatter()
-//                    dateFormatter.dateFormat = "dd.MM.yy"
-//                    guard let dateFromCloud = data["date"] else { return }
-//                    guard let date = dateFormatter.date(from: dateFromCloud as! String) else { return }
-//
                     self.clientsDetails.append(Client(name: (data["name"] as? String)!,
-//                                                      email: (data["email"] as? String)!,
-//                                                      phone: (data["phone"] as? String)!,
-//                                                      date: date,
-                                                      link: data["link"] as? String))
+                                                      link: data["link"] as? String, hard: data["hard"] as? String))
+                
                 }
                 self.tableView.reloadData()
             }
@@ -93,7 +124,9 @@ extension HistoryViewController: UITableViewDelegate, UITableViewDataSource {
         
         //Присваивание данных ячейке
         cell.textLabel?.text = clients[indexPath.row]
-        
+        if clientsDetails[indexPath.row].link == nil {
+            cell.backgroundColor = #colorLiteral(red: 0.8705882353, green: 0.9607843137, blue: 1, alpha: 1)
+        }
         return cell
     }
     
@@ -101,8 +134,11 @@ extension HistoryViewController: UITableViewDelegate, UITableViewDataSource {
         
         let resultVC = storyboard?.instantiateViewController(withIdentifier: "ResultViewController") as! ResultViewController
         resultVC.link = clientsDetails[indexPath.row].link ?? ""
-        navigationController?.pushViewController(resultVC, animated: true)
+        resultVC.hard = clientsDetails[indexPath.row].hard ?? ""
     
+        resultVC.isHistory = true
+        navigationController?.pushViewController(resultVC, animated: true)
+        
     }
     
     

@@ -9,12 +9,21 @@
 /* Begin PBXBuildFile section */
 		631DC901B8812E34A31D31B6 /* Pods_SmileOnlineProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CCF983D9D21824A29B19B75 /* Pods_SmileOnlineProjectTests.framework */; };
 		9542A969608F8776FDF8FF0D /* Pods_SmileOnlineProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B91953600922CFE6D2461371 /* Pods_SmileOnlineProjectUITests.framework */; };
+		A6173CF32658023200E5C0DE /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6173CF22658023000E5C0DE /* MenuViewController.swift */; };
+		A629585A260A74B900C8F33F /* DoctorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6295859260A74B900C8F33F /* DoctorViewController.swift */; };
+		A64AB28726262393006D0961 /* AdminConcole.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64AB28626262393006D0961 /* AdminConcole.swift */; };
+		A64AB2A92629EFE7006D0961 /* AdminConcoleClients.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64AB2A82629EFE7006D0961 /* AdminConcoleClients.swift */; };
+		A64AB3042629FBE1006D0961 /* AdminConcoleDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64AB3032629FBE1006D0961 /* AdminConcoleDetail.swift */; };
+		A6637B46261F76AC0000515C /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6637B45261F76AC0000515C /* FirebaseManager.swift */; };
+		A6830DAA2655A2690035757F /* TipeSignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6830DA92655A2690035757F /* TipeSignInViewController.swift */; };
+		A68D18A8262CB700005001F4 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68D18A7262CB6FF005001F4 /* UIImageViewExtension.swift */; };
+		A6B69449261CD5C900466062 /* SendPhotoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B69448261CD5C900466062 /* SendPhotoController.swift */; };
 		A6B8A30726055F7F00B7BDE9 /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B8A30626055F7F00B7BDE9 /* QuestionsViewController.swift */; };
 		A6BD442A25E0401E00006286 /* SigningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BD442925E0401E00006286 /* SigningViewController.swift */; };
-		A6BD442F25E0438400006286 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A6BD442E25E0438400006286 /* GoogleService-Info.plist */; };
 		A6C7F52625FFF3E400865D9E /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C7F52525FFF3E400865D9E /* TutorialViewController.swift */; };
 		A6C7F5482601307F00865D9E /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6C7F5472601307F00865D9E /* CollectionViewCell.xib */; };
-		A6FB5C6625DD7AAC00105A2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB5C6525DD7AAC00105A2B /* AppDelegate.swift */; };
+		A6E231A826446D52004FD390 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A6E231A726446D52004FD390 /* GoogleService-Info.plist */; };
+		A6E231BB26447549004FD390 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E231BA26447548004FD390 /* AppDelegate.swift */; };
 		A6FB5C6825DD7AAC00105A2B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB5C6725DD7AAC00105A2B /* SceneDelegate.swift */; };
 		A6FB5C6A25DD7AAC00105A2B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB5C6925DD7AAC00105A2B /* ViewController.swift */; };
 		A6FB5C6D25DD7AAC00105A2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6FB5C6B25DD7AAC00105A2B /* Main.storyboard */; };
@@ -56,13 +65,23 @@
 		62F991FA73138543B650924C /* Pods-SmileOnlineProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmileOnlineProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmileOnlineProject/Pods-SmileOnlineProject.debug.xcconfig"; sourceTree = "<group>"; };
 		9C1BE676300137576D7C71C1 /* Pods-SmileOnlineProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmileOnlineProjectTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmileOnlineProjectTests/Pods-SmileOnlineProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 		9CCF983D9D21824A29B19B75 /* Pods_SmileOnlineProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmileOnlineProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6173CF22658023000E5C0DE /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		A6295859260A74B900C8F33F /* DoctorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorViewController.swift; sourceTree = "<group>"; };
+		A64AB28626262393006D0961 /* AdminConcole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminConcole.swift; sourceTree = "<group>"; };
+		A64AB2A82629EFE7006D0961 /* AdminConcoleClients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminConcoleClients.swift; sourceTree = "<group>"; };
+		A64AB3032629FBE1006D0961 /* AdminConcoleDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminConcoleDetail.swift; sourceTree = "<group>"; };
+		A6637B45261F76AC0000515C /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		A6830DA92655A2690035757F /* TipeSignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipeSignInViewController.swift; sourceTree = "<group>"; };
+		A68D18A7262CB6FF005001F4 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		A6B69448261CD5C900466062 /* SendPhotoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendPhotoController.swift; sourceTree = "<group>"; };
 		A6B8A30626055F7F00B7BDE9 /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
 		A6BD442925E0401E00006286 /* SigningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigningViewController.swift; sourceTree = "<group>"; };
-		A6BD442E25E0438400006286 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A6C7F52525FFF3E400865D9E /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		A6C7F5472601307F00865D9E /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = SOURCE_ROOT; };
+		A6E2314426432AE1004FD390 /* SmileOnlineProject.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SmileOnlineProject.entitlements; sourceTree = "<group>"; };
+		A6E231A726446D52004FD390 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A6E231BA26447548004FD390 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "../../SmileOnline 2/SmileOnlineProject/AppDelegate.swift"; sourceTree = "<group>"; };
 		A6FB5C6225DD7AAC00105A2B /* SmileOnlineProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmileOnlineProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A6FB5C6525DD7AAC00105A2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6FB5C6725DD7AAC00105A2B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A6FB5C6925DD7AAC00105A2B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A6FB5C6C25DD7AAC00105A2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -143,6 +162,7 @@
 		A6FB5C5925DD7AAC00105A2B = {
 			isa = PBXGroup;
 			children = (
+				A6830DA92655A2690035757F /* TipeSignInViewController.swift */,
 				A6FB5C6425DD7AAC00105A2B /* SmileOnlineProject */,
 				A6FB5C7E25DD7AAE00105A2B /* SmileOnlineProjectTests */,
 				A6FB5C8925DD7AAF00105A2B /* SmileOnlineProjectUITests */,
@@ -165,18 +185,21 @@
 		A6FB5C6425DD7AAC00105A2B /* SmileOnlineProject */ = {
 			isa = PBXGroup;
 			children = (
+				A6E2314426432AE1004FD390 /* SmileOnlineProject.entitlements */,
 				FAF60CD125F35D56009893A7 /* Controllers */,
-				A6FB5C6525DD7AAC00105A2B /* AppDelegate.swift */,
 				A6FB5C6725DD7AAC00105A2B /* SceneDelegate.swift */,
 				A6FB5C6B25DD7AAC00105A2B /* Main.storyboard */,
 				A6FB5C7125DD7AAE00105A2B /* Assets.xcassets */,
+				A6E231BA26447548004FD390 /* AppDelegate.swift */,
 				A6FB5C7325DD7AAE00105A2B /* LaunchScreen.storyboard */,
 				A6FB5C7625DD7AAE00105A2B /* Info.plist */,
 				A6FB5C6E25DD7AAC00105A2B /* SmileOnlineProject.xcdatamodeld */,
 				FA6C5E6725E8376F0073FFE5 /* ImagePickerManager.swift */,
+				A6637B45261F76AC0000515C /* FirebaseManager.swift */,
 				FA6C5E6925E83A060073FFE5 /* CollectionViewCell.swift */,
-				A6BD442E25E0438400006286 /* GoogleService-Info.plist */,
 				A6C7F5472601307F00865D9E /* CollectionViewCell.xib */,
+				A68D18A7262CB6FF005001F4 /* UIImageViewExtension.swift */,
+				A6E231A726446D52004FD390 /* GoogleService-Info.plist */,
 			);
 			path = SmileOnlineProject;
 			sourceTree = "<group>";
@@ -202,15 +225,21 @@
 		FAF60CD125F35D56009893A7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				A6B8A30626055F7F00B7BDE9 /* QuestionsViewController.swift */,
 				A6FB5C6925DD7AAC00105A2B /* ViewController.swift */,
-				FA6C5E6325E832960073FFE5 /* PhotosViewController.swift */,
 				A6BD442925E0401E00006286 /* SigningViewController.swift */,
 				FA6C5E6125E82D760073FFE5 /* VerifyingViewController.swift */,
+				A6C7F52525FFF3E400865D9E /* TutorialViewController.swift */,
+				A6B8A30626055F7F00B7BDE9 /* QuestionsViewController.swift */,
+				FA6C5E6325E832960073FFE5 /* PhotosViewController.swift */,
+				A6B69448261CD5C900466062 /* SendPhotoController.swift */,
+				FA67AD3E25F366C000DE97FC /* ResultViewController.swift */,
+				A6295859260A74B900C8F33F /* DoctorViewController.swift */,
 				FAF60CCF25F35D4F009893A7 /* HistoryViewController.swift */,
 				FADA7C7C25EECBE9005FCDD0 /* ClientInfoViewController.swift */,
-				A6C7F52525FFF3E400865D9E /* TutorialViewController.swift */,
-				FA67AD3E25F366C000DE97FC /* ResultViewController.swift */,
+				A64AB28626262393006D0961 /* AdminConcole.swift */,
+				A64AB2A82629EFE7006D0961 /* AdminConcoleClients.swift */,
+				A64AB3032629FBE1006D0961 /* AdminConcoleDetail.swift */,
+				A6173CF22658023000E5C0DE /* MenuViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -227,6 +256,7 @@
 				A6FB5C5F25DD7AAC00105A2B /* Frameworks */,
 				A6FB5C6025DD7AAC00105A2B /* Resources */,
 				46330BD66FE7A115C310DF6F /* [CP] Embed Pods Frameworks */,
+				BD920D356FB8C613A58705F2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -323,7 +353,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6FB5C7525DD7AAE00105A2B /* LaunchScreen.storyboard in Resources */,
-				A6BD442F25E0438400006286 /* GoogleService-Info.plist in Resources */,
+				A6E231A826446D52004FD390 /* GoogleService-Info.plist in Resources */,
 				A6C7F5482601307F00865D9E /* CollectionViewCell.xib in Resources */,
 				A6FB5C7225DD7AAE00105A2B /* Assets.xcassets in Resources */,
 				A6FB5C6D25DD7AAC00105A2B /* Main.storyboard in Resources */,
@@ -400,6 +430,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		BD920D356FB8C613A58705F2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmileOnlineProject/Pods-SmileOnlineProject-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmileOnlineProject/Pods-SmileOnlineProject-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SmileOnlineProject/Pods-SmileOnlineProject-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		E59DA19BE2BE848C4A8A909E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -425,20 +472,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6E231BB26447549004FD390 /* AppDelegate.swift in Sources */,
 				FA6C5E6225E82D760073FFE5 /* VerifyingViewController.swift in Sources */,
 				A6FB5C6A25DD7AAC00105A2B /* ViewController.swift in Sources */,
+				A64AB3042629FBE1006D0961 /* AdminConcoleDetail.swift in Sources */,
+				A6830DAA2655A2690035757F /* TipeSignInViewController.swift in Sources */,
 				FA6C5E6B25E83A060073FFE5 /* CollectionViewCell.swift in Sources */,
 				A6BD442A25E0401E00006286 /* SigningViewController.swift in Sources */,
+				A6173CF32658023200E5C0DE /* MenuViewController.swift in Sources */,
 				A6FB5C7025DD7AAC00105A2B /* SmileOnlineProject.xcdatamodeld in Sources */,
 				FAF60CD025F35D4F009893A7 /* HistoryViewController.swift in Sources */,
 				A6C7F52625FFF3E400865D9E /* TutorialViewController.swift in Sources */,
+				A68D18A8262CB700005001F4 /* UIImageViewExtension.swift in Sources */,
+				A64AB28726262393006D0961 /* AdminConcole.swift in Sources */,
 				FADA7C7D25EECBE9005FCDD0 /* ClientInfoViewController.swift in Sources */,
 				FA6C5E6825E8376F0073FFE5 /* ImagePickerManager.swift in Sources */,
+				A629585A260A74B900C8F33F /* DoctorViewController.swift in Sources */,
+				A64AB2A92629EFE7006D0961 /* AdminConcoleClients.swift in Sources */,
 				A6B8A30726055F7F00B7BDE9 /* QuestionsViewController.swift in Sources */,
 				FA6C5E6425E832960073FFE5 /* PhotosViewController.swift in Sources */,
-				A6FB5C6625DD7AAC00105A2B /* AppDelegate.swift in Sources */,
+				A6B69449261CD5C900466062 /* SendPhotoController.swift in Sources */,
 				A6FB5C6825DD7AAC00105A2B /* SceneDelegate.swift in Sources */,
 				FA67AD3F25F366C000DE97FC /* ResultViewController.swift in Sources */,
+				A6637B46261F76AC0000515C /* FirebaseManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -615,6 +671,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SmileOnlineProject/SmileOnlineProject.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8R6WQM9KWN;
 				INFOPLIST_FILE = SmileOnlineProject/Info.plist;
@@ -622,7 +679,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = SileOnline.SmileOnlineProject;
+				MARKETING_VERSION = 0.0.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dolinskaya.smileonline;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -635,6 +693,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SmileOnlineProject/SmileOnlineProject.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8R6WQM9KWN;
 				INFOPLIST_FILE = SmileOnlineProject/Info.plist;
@@ -642,7 +701,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = SileOnline.SmileOnlineProject;
+				MARKETING_VERSION = 0.0.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dolinskaya.smileonline;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

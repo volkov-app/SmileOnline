@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>135603421643-20h8lmpg74p0b1olp9kn415v85b1prtb.apps.googleusercontent.com</string>
+	<string>135603421643-46htmd4ghqitulpodlrrj3us51l854c5.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.135603421643-20h8lmpg74p0b1olp9kn415v85b1prtb</string>
+	<string>com.googleusercontent.apps.135603421643-46htmd4ghqitulpodlrrj3us51l854c5</string>
 	<key>API_KEY</key>
 	<string>AIzaSyDeqUcGXZA-Uia6ev7F2-RZcjkiBr4Pt34</string>
 	<key>GCM_SENDER_ID</key>
@@ -13,24 +13,22 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>SileOnline.SmileOnlineProject</string>
+	<string>com.dolinskaya.smileonline</string>
 	<key>PROJECT_ID</key>
 	<string>smileonline-5683a</string>
 	<key>STORAGE_BUCKET</key>
 	<string>smileonline-5683a.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
-	<false/>
+	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
-	<false/>
+	<false></false>
 	<key>IS_APPINVITE_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>IS_GCM_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>IS_SIGNIN_ENABLED</key>
-	<true/>
-	<key>CFBundleIdentifier</key>
-	<string></string>
+	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:135603421643:ios:e5a994c3a5c651b54af64e</string>
+	<string>1:135603421643:ios:32e76d8e7d8cbf554af64e</string>
 </dict>
 </plist>

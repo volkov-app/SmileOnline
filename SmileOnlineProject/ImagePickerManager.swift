@@ -1,9 +1,3 @@
-//
-//  ImagePickerManager.swift
-//  SmileOnlineProject
-//
-//  Created by Alex Rudoi on 25/2/21.
-//
 
 import Foundation
 import UIKit
