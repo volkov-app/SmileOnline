@@ -13889,7 +13889,6 @@
 		A609CB3E7D4746EE4203CB18A7276DDA /* FUIArray.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FUIArray.m; path = Database/FirebaseDatabaseUI/FUIArray.m; sourceTree = "<group>"; };
 		A60C2E559170022263B66E05F6558354 /* en-CA.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = "en-CA.lproj"; path = "GoogleAuth/FirebaseGoogleAuthUI/Strings/en-CA.lproj"; sourceTree = "<group>"; };
 		A60E329855509E60321F96AB2C7544DA /* port_def.inc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.pascal; name = port_def.inc; path = third_party/upb/upb/port_def.inc; sourceTree = "<group>"; };
-		A6173C922656C7CD00E5C0DE /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MenuViewController.swift; path = ../SmileOnlineProject/Controllers/MenuViewController.swift; sourceTree = "<group>"; };
 		A61B3FD73F240B1CDE3E097912880276 /* grpc_alts_credentials_client_options.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = grpc_alts_credentials_client_options.cc; path = src/core/lib/security/credentials/alts/grpc_alts_credentials_client_options.cc; sourceTree = "<group>"; };
 		A62236EBE57B2F28E06750B40C0E197F /* resource_quota.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = resource_quota.h; path = src/core/lib/iomgr/resource_quota.h; sourceTree = "<group>"; };
 		A62EB560F1EF7AC286E9FE361646E89C /* FBSDKTestUsersManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKTestUsersManager.h; path = FBSDKCoreKit/FBSDKCoreKit/FBSDKTestUsersManager.h; sourceTree = "<group>"; };
@@ -21072,7 +21071,6 @@
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
-				A6173C922656C7CD00E5C0DE /* MenuViewController.swift */,
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				BDF992574CD66A876191D13EB6D28334 /* Frameworks */,
 				7278C93C8622E1CC6A1D80EE1D1926F7 /* Pods */,

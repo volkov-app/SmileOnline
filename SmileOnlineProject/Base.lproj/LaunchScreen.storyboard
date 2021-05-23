@@ -5,7 +5,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,16 +16,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="23x-QD-be9">
-                                <rect key="frame" x="87" y="338" width="240" height="220"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch" translatesAutoresizingMaskIntoConstraints="NO" id="23x-QD-be9">
+                                <rect key="frame" x="87" y="398" width="240" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="220" id="Zlk-el-5LL"/>
+                                    <constraint firstAttribute="height" constant="100" id="Zlk-el-5LL"/>
                                     <constraint firstAttribute="width" constant="240" id="kYK-8V-T9I"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                        <color key="backgroundColor" red="0.29411764709999999" green="0.27058823529999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="23x-QD-be9" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="E5E-Uo-EYh"/>
                             <constraint firstItem="23x-QD-be9" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="j3O-QU-bu2"/>
@@ -39,9 +38,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="logo" width="175" height="149"/>
-        <systemColor name="secondarySystemGroupedBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="launch" width="118" height="59"/>
     </resources>
 </document>
