@@ -27,8 +27,10 @@ class ViewController: UIViewController{
     @IBAction func onboardingTapped(_ sender: Any) {
         //прописываем механику онбординга
         if indexOnboarding == labelArray.count {
-            let vc = storyboard!.instantiateViewController(withIdentifier: "QuestionsViewController") as! QuestionsViewController
+            let vc = storyboard!.instantiateViewController(withIdentifier: "statusNC")
+            vc.modalPresentationStyle = .fullScreen
             present(vc, animated: true, completion: nil)
+            
         } else {
             onboadingLabel.text = labelArray[indexOnboarding]
             onboardingImage.image = imageArray[indexOnboarding]

@@ -9,6 +9,8 @@ import UIKit
 
 class MenuTableViewController: UITableViewController {
     
+    let heights: [CGFloat] = [209,108,41,41,41,41,100]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -65,24 +67,20 @@ class MenuTableViewController: UITableViewController {
         }
     }
     
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 4
-    }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 4
+        return 7
     }
     
-    
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-        
-        // Configure the cell...
-        
-        return cell
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if UserDefaults.standard.string(forKey: "authID") == nil {
+            if indexPath.row == 1 {
+                return 0
+            } else { return heights[indexPath.row] }
+        } else {return heights[indexPath.row]}
     }
-    
     
 }
+
+
