@@ -25,7 +25,6 @@
 		A6C7F52625FFF3E400865D9E /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C7F52525FFF3E400865D9E /* TutorialViewController.swift */; };
 		A6C7F5482601307F00865D9E /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6C7F5472601307F00865D9E /* CollectionViewCell.xib */; };
 		A6E231A826446D52004FD390 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A6E231A726446D52004FD390 /* GoogleService-Info.plist */; };
-		A6E231BB26447549004FD390 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E231BA26447548004FD390 /* AppDelegate.swift */; };
 		A6FB5C6825DD7AAC00105A2B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB5C6725DD7AAC00105A2B /* SceneDelegate.swift */; };
 		A6FB5C6A25DD7AAC00105A2B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB5C6925DD7AAC00105A2B /* ViewController.swift */; };
 		A6FB5C6D25DD7AAC00105A2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6FB5C6B25DD7AAC00105A2B /* Main.storyboard */; };
@@ -41,6 +40,7 @@
 		FA6C5E6825E8376F0073FFE5 /* ImagePickerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6C5E6725E8376F0073FFE5 /* ImagePickerManager.swift */; };
 		FA6C5E6B25E83A060073FFE5 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6C5E6925E83A060073FFE5 /* CollectionViewCell.swift */; };
 		FADA7C7D25EECBE9005FCDD0 /* ClientInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADA7C7C25EECBE9005FCDD0 /* ClientInfoViewController.swift */; };
+		FAE8403F265D5E3300DE9720 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE8403E265D5E3300DE9720 /* AppDelegate.swift */; };
 		FAF60CD025F35D4F009893A7 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF60CCF25F35D4F009893A7 /* HistoryViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -84,7 +84,6 @@
 		A6C7F5472601307F00865D9E /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = SOURCE_ROOT; };
 		A6E2314426432AE1004FD390 /* SmileOnlineProject.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SmileOnlineProject.entitlements; sourceTree = "<group>"; };
 		A6E231A726446D52004FD390 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		A6E231BA26447548004FD390 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "../../SmileOnline 2/SmileOnlineProject/AppDelegate.swift"; sourceTree = "<group>"; };
 		A6FB5C6225DD7AAC00105A2B /* SmileOnlineProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmileOnlineProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6FB5C6725DD7AAC00105A2B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A6FB5C6925DD7AAC00105A2B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +108,7 @@
 		FA6C5E6725E8376F0073FFE5 /* ImagePickerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerManager.swift; sourceTree = "<group>"; };
 		FA6C5E6925E83A060073FFE5 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		FADA7C7C25EECBE9005FCDD0 /* ClientInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientInfoViewController.swift; sourceTree = "<group>"; };
+		FAE8403E265D5E3300DE9720 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAF60CCF25F35D4F009893A7 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -215,7 +215,7 @@
 				A6FB5C6B25DD7AAC00105A2B /* Main.storyboard */,
 				A65AF3712658FDB700F943FC /* UIView extention.swift */,
 				A6FB5C7125DD7AAE00105A2B /* Assets.xcassets */,
-				A6E231BA26447548004FD390 /* AppDelegate.swift */,
+				FAE8403E265D5E3300DE9720 /* AppDelegate.swift */,
 				A6A3319F265D3AA4003DB3F2 /* GoogleSignInViewController.swift */,
 				A6FB5C7325DD7AAE00105A2B /* LaunchScreen.storyboard */,
 				A6FB5C7625DD7AAE00105A2B /* Info.plist */,
@@ -495,13 +495,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A65AF3722658FDB700F943FC /* UIView extention.swift in Sources */,
-				A6E231BB26447549004FD390 /* AppDelegate.swift in Sources */,
 				FA6C5E6225E82D760073FFE5 /* VerifyingViewController.swift in Sources */,
 				A6FB5C6A25DD7AAC00105A2B /* ViewController.swift in Sources */,
 				A64AB3042629FBE1006D0961 /* AdminConcoleDetail.swift in Sources */,
 				FA6C5E6B25E83A060073FFE5 /* CollectionViewCell.swift in Sources */,
 				A6A331A0265D3AA4003DB3F2 /* GoogleSignInViewController.swift in Sources */,
 				A6BD442A25E0401E00006286 /* SigningViewController.swift in Sources */,
+				FAE8403F265D5E3300DE9720 /* AppDelegate.swift in Sources */,
 				A6FB5C7025DD7AAC00105A2B /* SmileOnlineProject.xcdatamodeld in Sources */,
 				FAF60CD025F35D4F009893A7 /* HistoryViewController.swift in Sources */,
 				A6C7F52625FFF3E400865D9E /* TutorialViewController.swift in Sources */,
