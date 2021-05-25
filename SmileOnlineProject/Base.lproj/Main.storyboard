@@ -1461,6 +1461,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                     <connections>
                                                         <action selector="onboardingTapped:" destination="7lV-Vj-Ukz" eventType="touchUpInside" id="ylb-8i-bpT"/>
+                                                        <action selector="phoneButton:" destination="yzn-ES-8UI" eventType="touchUpInside" id="qTA-9m-rax"/>
                                                     </connections>
                                                 </button>
                                             </subviews>

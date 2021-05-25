@@ -19,13 +19,13 @@
 		A6637B46261F76AC0000515C /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6637B45261F76AC0000515C /* FirebaseManager.swift */; };
 		A68D18A8262CB700005001F4 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68D18A7262CB6FF005001F4 /* UIImageViewExtension.swift */; };
 		A6A331A0265D3AA4003DB3F2 /* GoogleSignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A3319F265D3AA4003DB3F2 /* GoogleSignInViewController.swift */; };
+		A6A331AA265D5D71003DB3F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A331A9265D5D71003DB3F2 /* AppDelegate.swift */; };
 		A6B69449261CD5C900466062 /* SendPhotoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B69448261CD5C900466062 /* SendPhotoController.swift */; };
 		A6B8A30726055F7F00B7BDE9 /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B8A30626055F7F00B7BDE9 /* QuestionsViewController.swift */; };
 		A6BD442A25E0401E00006286 /* SigningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BD442925E0401E00006286 /* SigningViewController.swift */; };
 		A6C7F52625FFF3E400865D9E /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C7F52525FFF3E400865D9E /* TutorialViewController.swift */; };
 		A6C7F5482601307F00865D9E /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6C7F5472601307F00865D9E /* CollectionViewCell.xib */; };
 		A6E231A826446D52004FD390 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A6E231A726446D52004FD390 /* GoogleService-Info.plist */; };
-		A6E231BB26447549004FD390 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E231BA26447548004FD390 /* AppDelegate.swift */; };
 		A6FB5C6825DD7AAC00105A2B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB5C6725DD7AAC00105A2B /* SceneDelegate.swift */; };
 		A6FB5C6A25DD7AAC00105A2B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB5C6925DD7AAC00105A2B /* ViewController.swift */; };
 		A6FB5C6D25DD7AAC00105A2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6FB5C6B25DD7AAC00105A2B /* Main.storyboard */; };
@@ -77,6 +77,7 @@
 		A6637B45261F76AC0000515C /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		A68D18A7262CB6FF005001F4 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		A6A3319F265D3AA4003DB3F2 /* GoogleSignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInViewController.swift; sourceTree = "<group>"; };
+		A6A331A9265D5D71003DB3F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6B69448261CD5C900466062 /* SendPhotoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendPhotoController.swift; sourceTree = "<group>"; };
 		A6B8A30626055F7F00B7BDE9 /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
 		A6BD442925E0401E00006286 /* SigningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigningViewController.swift; sourceTree = "<group>"; };
@@ -84,7 +85,6 @@
 		A6C7F5472601307F00865D9E /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = SOURCE_ROOT; };
 		A6E2314426432AE1004FD390 /* SmileOnlineProject.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SmileOnlineProject.entitlements; sourceTree = "<group>"; };
 		A6E231A726446D52004FD390 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		A6E231BA26447548004FD390 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "../../SmileOnline 2/SmileOnlineProject/AppDelegate.swift"; sourceTree = "<group>"; };
 		A6FB5C6225DD7AAC00105A2B /* SmileOnlineProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmileOnlineProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6FB5C6725DD7AAC00105A2B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A6FB5C6925DD7AAC00105A2B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -184,6 +184,15 @@
 			path = admin;
 			sourceTree = "<group>";
 		};
+		A6A331B4265D5E10003DB3F2 /* files */ = {
+			isa = PBXGroup;
+			children = (
+				A6FB5C6725DD7AAC00105A2B /* SceneDelegate.swift */,
+				A6A331A9265D5D71003DB3F2 /* AppDelegate.swift */,
+			);
+			path = files;
+			sourceTree = "<group>";
+		};
 		A6FB5C5925DD7AAC00105A2B = {
 			isa = PBXGroup;
 			children = (
@@ -209,13 +218,12 @@
 		A6FB5C6425DD7AAC00105A2B /* SmileOnlineProject */ = {
 			isa = PBXGroup;
 			children = (
+				A6A331B4265D5E10003DB3F2 /* files */,
 				A6E2314426432AE1004FD390 /* SmileOnlineProject.entitlements */,
 				FAF60CD125F35D56009893A7 /* Controllers */,
-				A6FB5C6725DD7AAC00105A2B /* SceneDelegate.swift */,
 				A6FB5C6B25DD7AAC00105A2B /* Main.storyboard */,
 				A65AF3712658FDB700F943FC /* UIView extention.swift */,
 				A6FB5C7125DD7AAE00105A2B /* Assets.xcassets */,
-				A6E231BA26447548004FD390 /* AppDelegate.swift */,
 				A6A3319F265D3AA4003DB3F2 /* GoogleSignInViewController.swift */,
 				A6FB5C7325DD7AAE00105A2B /* LaunchScreen.storyboard */,
 				A6FB5C7625DD7AAE00105A2B /* Info.plist */,
@@ -495,7 +503,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A65AF3722658FDB700F943FC /* UIView extention.swift in Sources */,
-				A6E231BB26447549004FD390 /* AppDelegate.swift in Sources */,
 				FA6C5E6225E82D760073FFE5 /* VerifyingViewController.swift in Sources */,
 				A6FB5C6A25DD7AAC00105A2B /* ViewController.swift in Sources */,
 				A64AB3042629FBE1006D0961 /* AdminConcoleDetail.swift in Sources */,
@@ -514,6 +521,7 @@
 				A65AF377265919C200F943FC /* MenuTableViewController.swift in Sources */,
 				A64AB2A92629EFE7006D0961 /* AdminConcoleClients.swift in Sources */,
 				A6B8A30726055F7F00B7BDE9 /* QuestionsViewController.swift in Sources */,
+				A6A331AA265D5D71003DB3F2 /* AppDelegate.swift in Sources */,
 				FA6C5E6425E832960073FFE5 /* PhotosViewController.swift in Sources */,
 				A6B69449261CD5C900466062 /* SendPhotoController.swift in Sources */,
 				A6FB5C6825DD7AAC00105A2B /* SceneDelegate.swift in Sources */,

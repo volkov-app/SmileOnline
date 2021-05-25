@@ -17,6 +17,9 @@ class TypeOfSignInTableViewController: UITableViewController, FUIAuthDelegate {
     @IBOutlet weak var AppleButton: UIButton!
     @IBOutlet weak var facebookButton: UIButton!
     
+    //скокращение
+    let storage = Storage.storage()
+    let db = Firestore.firestore()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +32,12 @@ class TypeOfSignInTableViewController: UITableViewController, FUIAuthDelegate {
     
     }
 
+    
+    @IBAction func phoneButton(_ sender: Any) {
+        let vc = self.storyboard!.instantiateViewController(withIdentifier: "SigningViewController") as! SigningViewController
+        self.present(vc, animated: true, completion: nil)
+    }
+    
     
     @IBAction func appleIDLoginButtonTapped(_ sender: Any) {
         
@@ -48,6 +57,19 @@ class TypeOfSignInTableViewController: UITableViewController, FUIAuthDelegate {
         if let user = authDataResult?.user {
             print("nice! \(user.uid) и емей \(user.email ?? "") ")
             UserDefaults.standard.set( authDataResult?.user.uid, forKey: "authID")
+            
+            db.collection("users")
+                .document("\(Auth.auth().currentUser!.uid)")
+                .setData([
+                    "number": "\(user.email ?? user.uid)"
+                ]) { err in
+                    if let err = err {
+                        print("Error writing document: \(err.localizedDescription)")
+                    } else {
+                        print("Document successfully written!")
+                        
+                    }
+                }
             
             if isHistory {
                 
