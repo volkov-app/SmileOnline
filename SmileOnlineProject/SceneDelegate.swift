@@ -19,7 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         if UserDefaults.standard.string(forKey: "authID") != nil {
         
-            let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "QuestionsViewController") as! QuestionsViewController
+            let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "statusNC")
             vc.modalPresentationStyle = .fullScreen
             
             // Create a ViewController object and set it as the scene's window's root view controller.
@@ -68,6 +68,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         // Save changes in the application's managed object context when the application transitions to the background.
         (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
+        
     }
 
 

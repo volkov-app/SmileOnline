@@ -52,6 +52,7 @@ class PhotosViewController: UIViewController, UICollectionViewDelegate, UICollec
         nameTF.textFieldUI()
         
         super.viewDidLoad()
+        UserDefaults.standard.set( false, forKey: "isBurger")
         
 //        if UserDefaults.standard.string(forKey: "authID") == nil {
 //            loginOut.isHidden = true
@@ -229,8 +230,9 @@ class PhotosViewController: UIViewController, UICollectionViewDelegate, UICollec
             
         } else {
             //переход на регистрацию
-            vc = self.storyboard!.instantiateViewController(withIdentifier: "TipeSignInViewController") // as! TipeSignInViewController
+            vc.modalPresentationStyle = .fullScreen
+            vc = self.storyboard!.instantiateViewController(withIdentifier: "TypeOfSignInTableViewController")  as! TypeOfSignInTableViewController
         }
-        self.navigationController?.present(vc, animated: true)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }

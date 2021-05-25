@@ -10,12 +10,12 @@ import Firebase
 
 class QuestionsViewController: UIViewController {
 
+    
+    
 private var nextViewNumber = Int()
 
 override func viewDidLoad() {
     super.viewDidLoad()
-    
-    
     Messaging.messaging().token { token, error in
       if let error = error {
         print("Error fetching FCM registration token: \(error)")
@@ -25,5 +25,13 @@ override func viewDidLoad() {
     }
     
 }
-
+    
+    
+    @IBAction func imPacient(_ sender: Any) {
+        UserDefaults.standard.set( false, forKey: "isDoctor")
+    }
+    @IBAction func imDoctor(_ sender: Any) {
+        UserDefaults.standard.set( true, forKey: "isDoctor")
+    }
+    
 }

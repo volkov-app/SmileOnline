@@ -11,20 +11,18 @@ import Firebase
 class VerifyingViewController: UIViewController {
     
     @IBOutlet weak var codeTF: UITextField!
+
+    @IBOutlet weak var nextButton: UIButton!
+    
     
     var phone = ""
     var isHistory = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        nextButton.dropShadow()
+        codeTF.textFieldUI()
         
-        //Делаем красивый текст филд
-        codeTF.layer.borderColor = UIColor.blue.cgColor
-        codeTF.layer.cornerRadius = 5.0
-        codeTF.layer.borderWidth = 1.0
-        codeTF.layer.masksToBounds = true
-        
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func nextTapped(_ sender: UIButton) {

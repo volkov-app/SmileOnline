@@ -18,6 +18,7 @@
 		A65AF3B7265A69F300F943FC /* TypeOfSignInTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65AF3B6265A69F300F943FC /* TypeOfSignInTableViewController.swift */; };
 		A6637B46261F76AC0000515C /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6637B45261F76AC0000515C /* FirebaseManager.swift */; };
 		A68D18A8262CB700005001F4 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68D18A7262CB6FF005001F4 /* UIImageViewExtension.swift */; };
+		A6A331A0265D3AA4003DB3F2 /* GoogleSignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A3319F265D3AA4003DB3F2 /* GoogleSignInViewController.swift */; };
 		A6B69449261CD5C900466062 /* SendPhotoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B69448261CD5C900466062 /* SendPhotoController.swift */; };
 		A6B8A30726055F7F00B7BDE9 /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B8A30626055F7F00B7BDE9 /* QuestionsViewController.swift */; };
 		A6BD442A25E0401E00006286 /* SigningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BD442925E0401E00006286 /* SigningViewController.swift */; };
@@ -75,6 +76,7 @@
 		A65AF3B6265A69F300F943FC /* TypeOfSignInTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeOfSignInTableViewController.swift; sourceTree = "<group>"; };
 		A6637B45261F76AC0000515C /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		A68D18A7262CB6FF005001F4 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		A6A3319F265D3AA4003DB3F2 /* GoogleSignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInViewController.swift; sourceTree = "<group>"; };
 		A6B69448261CD5C900466062 /* SendPhotoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendPhotoController.swift; sourceTree = "<group>"; };
 		A6B8A30626055F7F00B7BDE9 /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
 		A6BD442925E0401E00006286 /* SigningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigningViewController.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				A65AF3B6265A69F300F943FC /* TypeOfSignInTableViewController.swift */,
 				A6BD442925E0401E00006286 /* SigningViewController.swift */,
 				FA6C5E6125E82D760073FFE5 /* VerifyingViewController.swift */,
+				A6B69448261CD5C900466062 /* SendPhotoController.swift */,
 			);
 			path = registration;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 				A65AF3712658FDB700F943FC /* UIView extention.swift */,
 				A6FB5C7125DD7AAE00105A2B /* Assets.xcassets */,
 				A6E231BA26447548004FD390 /* AppDelegate.swift */,
+				A6A3319F265D3AA4003DB3F2 /* GoogleSignInViewController.swift */,
 				A6FB5C7325DD7AAE00105A2B /* LaunchScreen.storyboard */,
 				A6FB5C7625DD7AAE00105A2B /* Info.plist */,
 				A6FB5C6E25DD7AAC00105A2B /* SmileOnlineProject.xcdatamodeld */,
@@ -251,7 +255,6 @@
 				A6B8A30626055F7F00B7BDE9 /* QuestionsViewController.swift */,
 				FA6C5E6325E832960073FFE5 /* PhotosViewController.swift */,
 				A6C7F52525FFF3E400865D9E /* TutorialViewController.swift */,
-				A6B69448261CD5C900466062 /* SendPhotoController.swift */,
 				A65AF3BE265A6A6600F943FC /* registration */,
 				FA67AD3E25F366C000DE97FC /* ResultViewController.swift */,
 				A6295859260A74B900C8F33F /* DoctorViewController.swift */,
@@ -497,6 +500,7 @@
 				A6FB5C6A25DD7AAC00105A2B /* ViewController.swift in Sources */,
 				A64AB3042629FBE1006D0961 /* AdminConcoleDetail.swift in Sources */,
 				FA6C5E6B25E83A060073FFE5 /* CollectionViewCell.swift in Sources */,
+				A6A331A0265D3AA4003DB3F2 /* GoogleSignInViewController.swift in Sources */,
 				A6BD442A25E0401E00006286 /* SigningViewController.swift in Sources */,
 				A6FB5C7025DD7AAC00105A2B /* SmileOnlineProject.xcdatamodeld in Sources */,
 				FAF60CD025F35D4F009893A7 /* HistoryViewController.swift in Sources */,

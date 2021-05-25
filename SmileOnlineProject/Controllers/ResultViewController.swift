@@ -162,10 +162,5 @@ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     
     
 
-@IBAction func FistView(_ sender: UIButton) {
-    self.nextViewNumber = 3
-    self.performSegue(withIdentifier: "tabBar", sender: self)
-}
-
 
 }

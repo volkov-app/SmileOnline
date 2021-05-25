@@ -9,6 +9,8 @@ import UIKit
 
 class SendPhotoController: UIViewController {
     
+    @IBOutlet weak var nextButton: UIButton!
+    
     
     //фото загруженное через камеру или галерею
     var photos: [UIImage] = []
@@ -17,6 +19,8 @@ class SendPhotoController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        nextButton.dropShadow()
         
         cashClientName = UserDefaults.standard.string(forKey: "cashClientName")!
         

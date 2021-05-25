@@ -432,13 +432,16 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - FBSDKLoginKit
   - Firebase/Analytics
   - Firebase/AppDistribution
   - Firebase/Auth
+  - Firebase/Core
   - Firebase/Firestore
   - Firebase/Messaging
   - Firebase/Storage
   - FirebaseUI
+  - GoogleSignIn
   - IQKeyboardManagerSwift
   - YoutubePlayer-in-WKWebView
 
@@ -513,6 +516,6 @@ SPEC CHECKSUMS:
   SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
   YoutubePlayer-in-WKWebView: cfbf46da51d7370662a695a8f351e5fa1d3e1008
 
-PODFILE CHECKSUM: 5d34cc197cd12392d61e824f7480864b49543a65
+PODFILE CHECKSUM: 3ff1cc4b81ce16f806af8524eb2834d9f5848610
 
 COCOAPODS: 1.10.1

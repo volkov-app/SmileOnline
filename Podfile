@@ -9,6 +9,7 @@ target 'SmileOnlineProject' do
 
 pod 'Firebase/Firestore'
 pod 'Firebase/Auth'
+pod 'Firebase/Core'
 pod 'Firebase/AppDistribution'
 pod 'Firebase/Storage'
 pod 'YoutubePlayer-in-WKWebView'
@@ -17,6 +18,8 @@ pod 'Firebase/Analytics'
 pod 'FirebaseUI'
 pod 'Alamofire'
 pod 'IQKeyboardManagerSwift'
+pod 'GoogleSignIn'
+pod 'FBSDKLoginKit'
 
 
 # add pods for any other desired Firebase products

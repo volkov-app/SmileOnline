@@ -92,7 +92,7 @@ class FirebaseManager {
           try firebaseAuth.signOut()
             
             UserDefaults.standard.setValue(nil, forKey: "authID")
-            let vc = mainVC.storyboard!.instantiateViewController(withIdentifier: "QuestionsViewController") as! QuestionsViewController
+            let vc = mainVC.storyboard!.instantiateViewController(withIdentifier: "statusNC")
             vc.modalPresentationStyle = .fullScreen
             mainVC.present(vc, animated: true, completion: nil)
             
