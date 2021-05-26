@@ -92,17 +92,6 @@ class MenuTableViewController: UITableViewController {
         
     }
     
-    
-    
-    
-    func openUrl(urlStr:String!) {
-        
-        if let url = URL(string:urlStr) {
-            UIApplication.shared.openURL(url)
-        }
-        
-        
-    }
     func dialNumber(number : String) {
         
         if let url = URL(string: "tel://\(number)"),

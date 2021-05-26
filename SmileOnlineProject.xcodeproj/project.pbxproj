@@ -41,6 +41,7 @@
 		FA6C5E6825E8376F0073FFE5 /* ImagePickerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6C5E6725E8376F0073FFE5 /* ImagePickerManager.swift */; };
 		FA6C5E6B25E83A060073FFE5 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6C5E6925E83A060073FFE5 /* CollectionViewCell.swift */; };
 		FA861CEF265E9E2F001D4857 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA861CEE265E9E2F001D4857 /* SceneDelegate.swift */; };
+		FA861CF7265EB194001D4857 /* UIViewController extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA861CF6265EB194001D4857 /* UIViewController extension.swift */; };
 		FADA7C7D25EECBE9005FCDD0 /* ClientInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADA7C7C25EECBE9005FCDD0 /* ClientInfoViewController.swift */; };
 		FAE8403F265D5E3300DE9720 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE8403E265D5E3300DE9720 /* AppDelegate.swift */; };
 		FAF60CD025F35D4F009893A7 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF60CCF25F35D4F009893A7 /* HistoryViewController.swift */; };
@@ -111,6 +112,7 @@
 		FA6C5E6725E8376F0073FFE5 /* ImagePickerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerManager.swift; sourceTree = "<group>"; };
 		FA6C5E6925E83A060073FFE5 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		FA861CEE265E9E2F001D4857 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FA861CF6265EB194001D4857 /* UIViewController extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController extension.swift"; sourceTree = "<group>"; };
 		FADA7C7C25EECBE9005FCDD0 /* ClientInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientInfoViewController.swift; sourceTree = "<group>"; };
 		FAE8403E265D5E3300DE9720 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAF60CCF25F35D4F009893A7 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
@@ -188,15 +190,6 @@
 			path = admin;
 			sourceTree = "<group>";
 		};
-		A6A331B4265D5E10003DB3F2 /* files */ = {
-			isa = PBXGroup;
-			children = (
-				A6FB5C6725DD7AAC00105A2B /* SceneDelegate.swift */,
-				A6A331A9265D5D71003DB3F2 /* AppDelegate.swift */,
-			);
-			path = files;
-			sourceTree = "<group>";
-		};
 		A6FB5C5925DD7AAC00105A2B = {
 			isa = PBXGroup;
 			children = (
@@ -222,8 +215,8 @@
 		A6FB5C6425DD7AAC00105A2B /* SmileOnlineProject */ = {
 			isa = PBXGroup;
 			children = (
-                A6FB5C6725DD7AAC00105A2B /* SceneDelegate.swift */,
-                A6A331A9265D5D71003DB3F2 /* AppDelegate.swift */,
+				A6FB5C6725DD7AAC00105A2B /* SceneDelegate.swift */,
+				A6A331A9265D5D71003DB3F2 /* AppDelegate.swift */,
 				A6E2314426432AE1004FD390 /* SmileOnlineProject.entitlements */,
 				FAF60CD125F35D56009893A7 /* Controllers */,
 				A6FB5C6B25DD7AAC00105A2B /* Main.storyboard */,
@@ -241,6 +234,7 @@
 				A6C7F5472601307F00865D9E /* CollectionViewCell.xib */,
 				A68D18A7262CB6FF005001F4 /* UIImageViewExtension.swift */,
 				A6E231A726446D52004FD390 /* GoogleService-Info.plist */,
+				FA861CF6265EB194001D4857 /* UIViewController extension.swift */,
 			);
 			path = SmileOnlineProject;
 			sourceTree = "<group>";
@@ -520,6 +514,7 @@
 				A6FB5C7025DD7AAC00105A2B /* SmileOnlineProject.xcdatamodeld in Sources */,
 				FAF60CD025F35D4F009893A7 /* HistoryViewController.swift in Sources */,
 				A6C7F52625FFF3E400865D9E /* TutorialViewController.swift in Sources */,
+				FA861CF7265EB194001D4857 /* UIViewController extension.swift in Sources */,
 				FA861CEF265E9E2F001D4857 /* SceneDelegate.swift in Sources */,
 				A68D18A8262CB700005001F4 /* UIImageViewExtension.swift in Sources */,
 				A64AB28726262393006D0961 /* AdminConcole.swift in Sources */,

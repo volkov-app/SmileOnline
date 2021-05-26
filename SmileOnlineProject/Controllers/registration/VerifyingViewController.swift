@@ -11,9 +11,7 @@ import Firebase
 class VerifyingViewController: UIViewController {
     
     @IBOutlet weak var codeTF: UITextField!
-
     @IBOutlet weak var nextButton: UIButton!
-    
     
     var phone = ""
     var isHistory = false
@@ -22,13 +20,11 @@ class VerifyingViewController: UIViewController {
         super.viewDidLoad()
         nextButton.dropShadow()
         codeTF.textFieldUI()
-        
     }
     
     @IBAction func nextTapped(_ sender: UIButton) {
         guard let verificationCode = codeTF.text else { return }
-            FirebaseManager.instance.loginByVerificationCode(verificationCode: verificationCode, phone: phone, mainVC: self, isHistory: isHistory)
-        
+        FirebaseManager.instance.loginByVerificationCode(verificationCode: verificationCode, phone: phone, mainVC: self, isHistory: isHistory)
     }
     
     @IBAction func sendOTPagain(_ sender: Any) {
@@ -40,14 +36,6 @@ class VerifyingViewController: UIViewController {
     }
     
     func sendOTP() {
-        guard let phone = UserDefaults.standard.string(forKey: "phoneNumber") else {
-            return
-        }
-        
-        
-        
+        guard UserDefaults.standard.string(forKey: "phoneNumber") != nil else { return }
     }
-    
-    
-    
 }

@@ -10,19 +10,15 @@ import Firebase
 
 class PhotosViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource{
     
-    
-    @IBOutlet weak var loginOut: UIButton!
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var descriptionLable: UILabel!
     @IBOutlet weak var nameTF: UITextField!
     @IBOutlet weak var nextButtonPressed: UIButton!
     @IBOutlet weak var tutorialButtonPressed: UIButton!
     
-    
-    var isDoctor = false
     var descriptionArray = ["Отправьте фото улыбки и получите варианты исправления прикуса", "Отправьте фото улыбки вашего клиента и получите варианты исправления прикуса"]
     
-    
+    var isDoctor = false
     
     var activityIndicator: UIActivityIndicatorView = {
         let activity = UIActivityIndicatorView()
@@ -38,8 +34,7 @@ class PhotosViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     //фото для collectionView
     let standartPhotos: [UIImage] = [#imageLiteral(resourceName: "tutor1"),#imageLiteral(resourceName: "tutor2"),#imageLiteral(resourceName: "tutor3"),#imageLiteral(resourceName: "tutor5"),#imageLiteral(resourceName: "tutor4"),#imageLiteral(resourceName: "tutor6")]
-   let placeholderPhotos: [UIImage] = [#imageLiteral(resourceName: "tutorPh1"),#imageLiteral(resourceName: "tutorPh2"),#imageLiteral(resourceName: "tutorPh3"),#imageLiteral(resourceName: "tutorPh4"),#imageLiteral(resourceName: "tutorPh5"),#imageLiteral(resourceName: "tutorPh6")]
-    
+    let placeholderPhotos: [UIImage] = [#imageLiteral(resourceName: "tutorPh1"),#imageLiteral(resourceName: "tutorPh2"),#imageLiteral(resourceName: "tutorPh3"),#imageLiteral(resourceName: "tutorPh4"),#imageLiteral(resourceName: "tutorPh5"),#imageLiteral(resourceName: "tutorPh6")]
     
     //фото загруженное через камеру или галерею
     var photos: [UIImage] = [#imageLiteral(resourceName: "tutorPh1"),#imageLiteral(resourceName: "tutorPh2"),#imageLiteral(resourceName: "tutorPh3"),#imageLiteral(resourceName: "tutorPh4"),#imageLiteral(resourceName: "tutorPh5"),#imageLiteral(resourceName: "tutorPh6")]
@@ -54,20 +49,6 @@ class PhotosViewController: UIViewController, UICollectionViewDelegate, UICollec
         super.viewDidLoad()
         UserDefaults.standard.set( false, forKey: "isBurger")
         
-//        if UserDefaults.standard.string(forKey: "authID") == nil {
-//            loginOut.isHidden = true
-//        } else { loginOut.isHidden = false}
-//        
-//        if isDoctor {
-//            descriptionLable.text = descriptionArray[1]
-//        } else {
-//            descriptionLable.text = descriptionArray[0]
-//        }
-        
-        
-        //activityIndicator.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        //activityIndicator.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-        
         //присваиваем делигаты
         collectionView.delegate = self
         collectionView.dataSource = self
@@ -78,32 +59,6 @@ class PhotosViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     @IBAction func bezopasnostButton(_ sender: Any) {
         openUrl(urlStr: "https://disk.yandex.ru/d/Vn_zsmabhwWQ1Q")
-    }
-    
-    
-    
-    @IBAction func logOutPressed(_ sender: Any) {
-        
-        let alert = UIAlertController(title: "Подтверждение", message: "Вы действительно хотите выйти из учетной записи? При выходе потребуется через номер телефона снова входить в приложение", preferredStyle: .alert)
-        let alertAction1 = UIAlertAction(title: "Да", style: .default) { (_) in
-            
-            FirebaseManager.instance.logOut(mainVC: self)
-            
-        }
-            
-        let alertAction2 = UIAlertAction(title: "Нет", style: .default) { (_) in
-            
-            self.tabBarController?.selectedViewController = self.tabBarController?.viewControllers?[0]
-            
-            
-        }
-        
-        alert.addAction(alertAction1)
-        alert.addAction(alertAction2)
-        
-        self.present(alert, animated: true)
-        
-        
     }
     
     func isAllPhotos () -> Bool {
@@ -118,30 +73,24 @@ class PhotosViewController: UIViewController, UICollectionViewDelegate, UICollec
         }
         return bool
         
-        
     }
     
     //при нажатии кнопки
     @IBAction func enterTapped(_ sender: UIButton) {
         
-        
         //пишем условия
         if nameTF.text == ""{
-            
             
             //выводим предупреждение в случае ошибки
             let alert = UIAlertController(title: "Вы не ввели имя", message: nil, preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Хорошо", style: .default))
             present(alert, animated: true)
             
-            
-            
         } else if isAllPhotos() {
             
             activityIndicator.isHidden = false
             activityIndicator.startAnimating()
             savePhotos()
-            
             
         } else {
             
@@ -169,16 +118,10 @@ class PhotosViewController: UIViewController, UICollectionViewDelegate, UICollec
         let cell = collectionView.cellForItem(at: indexPath) as! CollectionViewCell
         let filterView = UIImageView(image: placeholderPhotos[indexPath.row])
         filterView.center = view.center
-        // filterView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-        
         
         ImagePickerManager(image: filterView).pickImage(self) { (image) in
-            
             self.photos[indexPath.row] = image
-            
-            
             cell.imageView.image = image
-            
         }
     }
     //для закрытия клавиатуры
@@ -186,27 +129,7 @@ class PhotosViewController: UIViewController, UICollectionViewDelegate, UICollec
         self.view.endEditing(true)
     }
     
-    func UIColorFromRGB(rgbValue: UInt) -> UIColor {
-        return UIColor(
-            red: CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0,
-            green: CGFloat((rgbValue & 0x00FF00) >> 8) / 255.0,
-            blue: CGFloat(rgbValue & 0x0000FF) / 255.0,
-            alpha: CGFloat(1.0)
-        )
-    }
-
-
-    func openUrl(urlStr:String!) {
-        
-        if let url = URL(string:urlStr) {
-            UIApplication.shared.openURL(url)
-        }
-        
-        
-    }
-    
     func savePhotos() {
-        
         var i = 1
         for photo in photos {
             
@@ -226,8 +149,6 @@ class PhotosViewController: UIViewController, UICollectionViewDelegate, UICollec
             //Переход на экран результата
             FirebaseManager.instance.sendPhotos(photos: photos, cashClientName: nameTF.text!)
             vc = self.storyboard!.instantiateViewController(withIdentifier: "ResultViewController") as! ResultViewController
-            
-            
         } else {
             //переход на регистрацию
             vc.modalPresentationStyle = .fullScreen

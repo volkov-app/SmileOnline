@@ -9,29 +9,32 @@ import UIKit
 import Firebase
 
 class QuestionsViewController: UIViewController {
-
     
+    private var nextViewNumber = Int()
     
-private var nextViewNumber = Int()
-
-override func viewDidLoad() {
-    super.viewDidLoad()
-    Messaging.messaging().token { token, error in
-      if let error = error {
-        print("Error fetching FCM registration token: \(error)")
-      } else if let token = token {
-        print("FCM registration token: \(token)")
-      }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        Messaging.messaging().token { token, error in
+            if let error = error {
+                print("Error fetching FCM registration token: \(error)")
+            } else if let token = token {
+                print("FCM registration token: \(token)")
+            }
+        }
     }
     
-}
-    
-    
-    @IBAction func imPacient(_ sender: Any) {
-        UserDefaults.standard.set( false, forKey: "isDoctor")
-    }
-    @IBAction func imDoctor(_ sender: Any) {
-        UserDefaults.standard.set( true, forKey: "isDoctor")
+    @IBAction func occupationTapped(_ sender: UIButton) {
+        var option = false
+        switch sender.tag {
+        case 0:
+            option = false
+            break
+        case 1:
+            option = true
+            break
+        default:break
+        }
+        UserDefaults.standard.set(option, forKey: "isDoctor")
     }
     
 }
