@@ -10,7 +10,9 @@ import Firebase
 
 class AdminConcoleClients: UIViewController {
     
+    
     @IBOutlet weak var tableView: UITableView!
+    
     
     let db = Firestore.firestore()
     
@@ -22,7 +24,16 @@ class AdminConcoleClients: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         getData()
+    
+        
+        
+        
         callDelegates()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+        
     }
     
     func callDelegates() {
@@ -81,5 +92,8 @@ extension AdminConcoleClients: UITableViewDelegate, UITableViewDataSource {
         resultVC.client = clients[indexPath.row]
         
         navigationController?.pushViewController(resultVC, animated: true)
-    } 
+        
+    }
+    
+    
 }

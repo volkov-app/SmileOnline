@@ -11,11 +11,16 @@ import Alamofire
 
 class AdminConcoleDetail: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UIPickerViewDataSource, UIPickerViewDelegate {
     
+    
+    
+    
+    
     @IBOutlet weak var hardTF: UITextField!
     @IBOutlet weak var linkTF: UITextField!
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var picker: UIPickerView!
     @IBOutlet weak var sendButton: UIButton!
+    
     
     //скокращение
     let storage = Storage.storage()
@@ -33,8 +38,11 @@ class AdminConcoleDetail: UIViewController, UICollectionViewDataSource, UICollec
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        // standartPhotos = FirebaseManager.instance.downloadPhotos(user: user, client: client)
+        // var photos: [UIImage] = []
+        //        downloadPhotos()
         picker.isHidden = true
+        
         
         //присваиваем делигаты
         collectionView.delegate = self
@@ -56,6 +64,9 @@ class AdminConcoleDetail: UIViewController, UICollectionViewDataSource, UICollec
         
         hardTF.inputView = picker
         hardTF.inputAccessoryView = toolBar
+        
+        
+        
         
         //регистрируем ячейку
         collectionView.register(UINib(nibName: "CollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "collectionViewCell")
@@ -132,6 +143,7 @@ class AdminConcoleDetail: UIViewController, UICollectionViewDataSource, UICollec
                     self.sendButton.isHidden = true
                 }
             }
+        
     }
     func sendNotification() {
         let docRef = db.collection("users").document("\(user)")
@@ -146,8 +158,8 @@ class AdminConcoleDetail: UIViewController, UICollectionViewDataSource, UICollec
                 print("Document does not exist")
             }
         }
-        
         //Отправляем сообщение
+        
         guard let url = URL(string: "https://fcm.googleapis.com/fcm/send") else {
             fatalError("Pastebin URL not working")
         }
@@ -166,6 +178,7 @@ class AdminConcoleDetail: UIViewController, UICollectionViewDataSource, UICollec
         headers.add(HTTPHeader(name: "Content-type", value: "application/json"))
         headers.add(HTTPHeader(name: "Authorization", value: "Key=AAAAH5KYAcs:APA91bFTQGKFO7pV8cxKSlpCyRxz46G64UNsm63uUBSccSBVFtySaNue-rf2GzZRsy8NZv56Q3lgdswbM3Y9LQtaawh2f33UQScTn2nfqkapvi4NqiVm_EHFnwLhdKx3UdWQIBC0DS5f"))
         
+        
         AF.request(url, method: .post, parameters: params, encoding: JSONEncoding.default, headers: headers).responseJSON { response in
             switch response.result {
             
@@ -178,11 +191,25 @@ class AdminConcoleDetail: UIViewController, UICollectionViewDataSource, UICollec
                 print("Request failed with error: \(error)")
             }
         }
+        
+        
     }
     
     func downloadPhotos() {
         for fileNum in 0...4 {
             let islandRef = storage.reference(withPath: "users/\(user)/\(client)/photo\(fileNum)")
+            //            islandRef.downloadURL { (url, error) in
+            //                if let error = error {
+            //                  print(error.localizedDescription)
+            //
+            //                } else {
+            //                    let imageView = UIImageView()
+            //
+            //
+            //                    imageView.downloaded(from: url!)
+            //                    self.photos.append(imageView.image!)
+            //                }
+            //            }
             islandRef.getData(maxSize: 1 * 2048 * 2048) { data, error in
                 if let error = error {
                     print(error.localizedDescription)
@@ -193,8 +220,11 @@ class AdminConcoleDetail: UIViewController, UICollectionViewDataSource, UICollec
                     self.photos.append(image!)
                     self.collectionView.reloadData()
                 }
+                
             }
+            
         }
+        
     }
 }
 

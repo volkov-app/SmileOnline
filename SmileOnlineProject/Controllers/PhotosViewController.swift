@@ -16,9 +16,11 @@ class PhotosViewController: UIViewController, UICollectionViewDelegate, UICollec
     @IBOutlet weak var nextButtonPressed: UIButton!
     @IBOutlet weak var tutorialButtonPressed: UIButton!
     
-    var descriptionArray = ["Отправьте фото улыбки и получите варианты исправления прикуса", "Отправьте фото улыбки вашего клиента и получите варианты исправления прикуса"]
     
     var isDoctor = false
+    var descriptionArray = ["Отправьте фото улыбки и получите варианты исправления прикуса", "Отправьте фото улыбки вашего клиента и получите варианты исправления прикуса"]
+    
+    
     
     var activityIndicator: UIActivityIndicatorView = {
         let activity = UIActivityIndicatorView()
@@ -34,7 +36,8 @@ class PhotosViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     //фото для collectionView
     let standartPhotos: [UIImage] = [#imageLiteral(resourceName: "tutor1"),#imageLiteral(resourceName: "tutor2"),#imageLiteral(resourceName: "tutor3"),#imageLiteral(resourceName: "tutor5"),#imageLiteral(resourceName: "tutor4"),#imageLiteral(resourceName: "tutor6")]
-    let placeholderPhotos: [UIImage] = [#imageLiteral(resourceName: "tutorPh1"),#imageLiteral(resourceName: "tutorPh2"),#imageLiteral(resourceName: "tutorPh3"),#imageLiteral(resourceName: "tutorPh4"),#imageLiteral(resourceName: "tutorPh5"),#imageLiteral(resourceName: "tutorPh6")]
+   let placeholderPhotos: [UIImage] = [#imageLiteral(resourceName: "tutorPh1"),#imageLiteral(resourceName: "tutorPh2"),#imageLiteral(resourceName: "tutorPh3"),#imageLiteral(resourceName: "tutorPh4"),#imageLiteral(resourceName: "tutorPh5"),#imageLiteral(resourceName: "tutorPh6")]
+    
     
     //фото загруженное через камеру или галерею
     var photos: [UIImage] = [#imageLiteral(resourceName: "tutorPh1"),#imageLiteral(resourceName: "tutorPh2"),#imageLiteral(resourceName: "tutorPh3"),#imageLiteral(resourceName: "tutorPh4"),#imageLiteral(resourceName: "tutorPh5"),#imageLiteral(resourceName: "tutorPh6")]
@@ -61,6 +64,7 @@ class PhotosViewController: UIViewController, UICollectionViewDelegate, UICollec
         openUrl(urlStr: "https://disk.yandex.ru/d/Vn_zsmabhwWQ1Q")
     }
     
+    
     func isAllPhotos () -> Bool {
         var index = 0
         var bool = true
@@ -73,24 +77,30 @@ class PhotosViewController: UIViewController, UICollectionViewDelegate, UICollec
         }
         return bool
         
+        
     }
     
     //при нажатии кнопки
     @IBAction func enterTapped(_ sender: UIButton) {
         
+        
         //пишем условия
         if nameTF.text == ""{
+            
             
             //выводим предупреждение в случае ошибки
             let alert = UIAlertController(title: "Вы не ввели имя", message: nil, preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Хорошо", style: .default))
             present(alert, animated: true)
             
+            
+            
         } else if isAllPhotos() {
             
             activityIndicator.isHidden = false
             activityIndicator.startAnimating()
             savePhotos()
+            
             
         } else {
             
@@ -119,9 +129,14 @@ class PhotosViewController: UIViewController, UICollectionViewDelegate, UICollec
         let filterView = UIImageView(image: placeholderPhotos[indexPath.row])
         filterView.center = view.center
         
+        
         ImagePickerManager(image: filterView).pickImage(self) { (image) in
+            
             self.photos[indexPath.row] = image
+            
+            
             cell.imageView.image = image
+            
         }
     }
     //для закрытия клавиатуры
@@ -129,7 +144,19 @@ class PhotosViewController: UIViewController, UICollectionViewDelegate, UICollec
         self.view.endEditing(true)
     }
     
+
+
+    func openUrl(urlStr:String!) {
+        
+        if let url = URL(string:urlStr) {
+            UIApplication.shared.openURL(url)
+        }
+        
+        
+    }
+    
     func savePhotos() {
+        
         var i = 1
         for photo in photos {
             
@@ -149,6 +176,8 @@ class PhotosViewController: UIViewController, UICollectionViewDelegate, UICollec
             //Переход на экран результата
             FirebaseManager.instance.sendPhotos(photos: photos, cashClientName: nameTF.text!)
             vc = self.storyboard!.instantiateViewController(withIdentifier: "ResultViewController") as! ResultViewController
+            
+            
         } else {
             //переход на регистрацию
             vc.modalPresentationStyle = .fullScreen

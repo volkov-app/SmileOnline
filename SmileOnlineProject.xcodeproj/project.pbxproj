@@ -13,6 +13,7 @@
 		A64AB28726262393006D0961 /* AdminConcole.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64AB28626262393006D0961 /* AdminConcole.swift */; };
 		A64AB2A92629EFE7006D0961 /* AdminConcoleClients.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64AB2A82629EFE7006D0961 /* AdminConcoleClients.swift */; };
 		A64AB3042629FBE1006D0961 /* AdminConcoleDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64AB3032629FBE1006D0961 /* AdminConcoleDetail.swift */; };
+		A64DE4E3265ED3E100C16F86 /* HistoryResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64DE4E2265ED3E100C16F86 /* HistoryResultViewController.swift */; };
 		A65AF3722658FDB700F943FC /* UIView extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65AF3712658FDB700F943FC /* UIView extention.swift */; };
 		A65AF377265919C200F943FC /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65AF376265919C200F943FC /* MenuTableViewController.swift */; };
 		A65AF3B7265A69F300F943FC /* TypeOfSignInTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65AF3B6265A69F300F943FC /* TypeOfSignInTableViewController.swift */; };
@@ -41,7 +42,6 @@
 		FA6C5E6825E8376F0073FFE5 /* ImagePickerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6C5E6725E8376F0073FFE5 /* ImagePickerManager.swift */; };
 		FA6C5E6B25E83A060073FFE5 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6C5E6925E83A060073FFE5 /* CollectionViewCell.swift */; };
 		FA861CEF265E9E2F001D4857 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA861CEE265E9E2F001D4857 /* SceneDelegate.swift */; };
-		FA861CF7265EB194001D4857 /* UIViewController extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA861CF6265EB194001D4857 /* UIViewController extension.swift */; };
 		FADA7C7D25EECBE9005FCDD0 /* ClientInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADA7C7C25EECBE9005FCDD0 /* ClientInfoViewController.swift */; };
 		FAE8403F265D5E3300DE9720 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE8403E265D5E3300DE9720 /* AppDelegate.swift */; };
 		FAF60CD025F35D4F009893A7 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF60CCF25F35D4F009893A7 /* HistoryViewController.swift */; };
@@ -74,6 +74,7 @@
 		A64AB28626262393006D0961 /* AdminConcole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminConcole.swift; sourceTree = "<group>"; };
 		A64AB2A82629EFE7006D0961 /* AdminConcoleClients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminConcoleClients.swift; sourceTree = "<group>"; };
 		A64AB3032629FBE1006D0961 /* AdminConcoleDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminConcoleDetail.swift; sourceTree = "<group>"; };
+		A64DE4E2265ED3E100C16F86 /* HistoryResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryResultViewController.swift; sourceTree = "<group>"; };
 		A65AF3712658FDB700F943FC /* UIView extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView extention.swift"; sourceTree = "<group>"; };
 		A65AF376265919C200F943FC /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		A65AF3B6265A69F300F943FC /* TypeOfSignInTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeOfSignInTableViewController.swift; sourceTree = "<group>"; };
@@ -112,7 +113,6 @@
 		FA6C5E6725E8376F0073FFE5 /* ImagePickerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerManager.swift; sourceTree = "<group>"; };
 		FA6C5E6925E83A060073FFE5 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		FA861CEE265E9E2F001D4857 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FA861CF6265EB194001D4857 /* UIViewController extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController extension.swift"; sourceTree = "<group>"; };
 		FADA7C7C25EECBE9005FCDD0 /* ClientInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientInfoViewController.swift; sourceTree = "<group>"; };
 		FAE8403E265D5E3300DE9720 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAF60CCF25F35D4F009893A7 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
@@ -234,7 +234,6 @@
 				A6C7F5472601307F00865D9E /* CollectionViewCell.xib */,
 				A68D18A7262CB6FF005001F4 /* UIImageViewExtension.swift */,
 				A6E231A726446D52004FD390 /* GoogleService-Info.plist */,
-				FA861CF6265EB194001D4857 /* UIViewController extension.swift */,
 			);
 			path = SmileOnlineProject;
 			sourceTree = "<group>";
@@ -266,6 +265,7 @@
 				A6C7F52525FFF3E400865D9E /* TutorialViewController.swift */,
 				A65AF3BE265A6A6600F943FC /* registration */,
 				FA67AD3E25F366C000DE97FC /* ResultViewController.swift */,
+				A64DE4E2265ED3E100C16F86 /* HistoryResultViewController.swift */,
 				A6295859260A74B900C8F33F /* DoctorViewController.swift */,
 				FAF60CCF25F35D4F009893A7 /* HistoryViewController.swift */,
 				FADA7C7C25EECBE9005FCDD0 /* ClientInfoViewController.swift */,
@@ -514,7 +514,6 @@
 				A6FB5C7025DD7AAC00105A2B /* SmileOnlineProject.xcdatamodeld in Sources */,
 				FAF60CD025F35D4F009893A7 /* HistoryViewController.swift in Sources */,
 				A6C7F52625FFF3E400865D9E /* TutorialViewController.swift in Sources */,
-				FA861CF7265EB194001D4857 /* UIViewController extension.swift in Sources */,
 				FA861CEF265E9E2F001D4857 /* SceneDelegate.swift in Sources */,
 				A68D18A8262CB700005001F4 /* UIImageViewExtension.swift in Sources */,
 				A64AB28726262393006D0961 /* AdminConcole.swift in Sources */,
@@ -528,6 +527,7 @@
 				A6A331AA265D5D71003DB3F2 /* AppDelegate.swift in Sources */,
 				FA6C5E6425E832960073FFE5 /* PhotosViewController.swift in Sources */,
 				A6B69449261CD5C900466062 /* SendPhotoController.swift in Sources */,
+				A64DE4E3265ED3E100C16F86 /* HistoryResultViewController.swift in Sources */,
 				A6FB5C6825DD7AAC00105A2B /* SceneDelegate.swift in Sources */,
 				FA67AD3F25F366C000DE97FC /* ResultViewController.swift in Sources */,
 				A6637B46261F76AC0000515C /* FirebaseManager.swift in Sources */,
@@ -709,13 +709,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SmileOnlineProject/SmileOnlineProject.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 8R6WQM9KWN;
 				INFOPLIST_FILE = SmileOnlineProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.13;
+				MARKETING_VERSION = 0.0.15;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dolinskaya.smileonline;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -731,13 +732,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SmileOnlineProject/SmileOnlineProject.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 8R6WQM9KWN;
 				INFOPLIST_FILE = SmileOnlineProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.13;
+				MARKETING_VERSION = 0.0.15;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dolinskaya.smileonline;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

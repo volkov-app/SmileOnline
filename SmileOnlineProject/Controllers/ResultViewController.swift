@@ -9,15 +9,11 @@ import UIKit
 
 class ResultViewController: UIViewController {
     
-    var link = ""
-    var hard = ""
     var isHistory = false
     
     @IBOutlet weak var timerLabel: UILabel!
     
-    @IBOutlet weak var getPlan: UIButton!
     @IBOutlet weak var closeButton: UIButton!
-    @IBOutlet weak var hardLabel: UILabel!
     @IBOutlet weak var textDescription: UILabel!
     
     
@@ -40,19 +36,6 @@ class ResultViewController: UIViewController {
             timerLabel.isHidden = true
         }
         
-        if link == "" {
-            getPlan.isHidden = true
-            hardLabel.isHidden = true
-            
-        } else {
-            hardLabel.text = "Сложность личения: \(hard)"
-        }
-    }
-    
-    @IBAction func getPlanTapped(_ sender: UIButton) {
-        if let url = URL(string: link){
-            UIApplication.shared.openURL(url)
-        }
     }
     
     @IBAction func callButton(_ sender: Any) { dialNumber(number: "+79313605280" )
@@ -64,6 +47,15 @@ class ResultViewController: UIViewController {
     @IBAction func whatupButton(_ sender: Any) {openUrl(urlStr: "https://wa.me/+79313605280?text=urlencodedtext")
     }
     
+    
+    func openUrl(urlStr:String!) {
+        
+        if let url = URL(string:urlStr) {
+            UIApplication.shared.openURL(url)
+        }
+        
+        
+    }
     func dialNumber(number : String) {
         
         if let url = URL(string: "tel://\(number)"),
@@ -78,25 +70,12 @@ class ResultViewController: UIViewController {
         }
     }
     
+    
+    
+    
     // Create a value for chosed view
     private var nextViewNumber = Int()
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "tabBar" {
-            
-            let nextView = segue.destination as! UITabBarController
-            switch (nextViewNumber) {
-            case 1:
-                nextView.selectedIndex = 0
-            case 2:
-                nextView.selectedIndex = 1
-            case 3:
-                nextView.selectedIndex = 2
-            default:
-                break
-            }
-        }
-    }
     
     func startTimer(){
         var runCount = 300
@@ -109,10 +88,6 @@ class ResultViewController: UIViewController {
                 timer.invalidate()
                 self.timerLabel.isHidden = true
                 print("timer stoped")
-                
-                if self.link != "" {
-                    self.getPlan.isHidden = false
-                }
             }
         }
     }
@@ -141,4 +116,8 @@ class ResultViewController: UIViewController {
         }
         return times.joined(separator: "")
     }
+    
+    
+    
+    
 }

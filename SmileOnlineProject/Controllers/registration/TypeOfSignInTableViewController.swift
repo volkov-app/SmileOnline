@@ -9,7 +9,7 @@ import UIKit
 import FirebaseUI
 
 class TypeOfSignInTableViewController: UITableViewController, FUIAuthDelegate {
-    
+
     var isHistory = false
     
     @IBOutlet weak var phoneButton: UIButton!
@@ -23,27 +23,32 @@ class TypeOfSignInTableViewController: UITableViewController, FUIAuthDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         phoneButton.dropShadow()
         googleButton.dropShadow()
         AppleButton.dropShadow()
         facebookButton.dropShadow()
+        
+    
     }
+
     
     @IBAction func phoneButton(_ sender: Any) {
         let vc = self.storyboard!.instantiateViewController(withIdentifier: "SigningViewController") as! SigningViewController
-        self.present(vc, animated: true, completion: nil)
+        vc.modalPresentationStyle = .formSheet
+        self.present(vc, animated: true)
     }
+    
     
     @IBAction func appleIDLoginButtonTapped(_ sender: Any) {
         
         if let authUI = FUIAuth.defaultAuthUI() {
-            
             authUI.providers = [FUIOAuth.appleAuthProvider()]
-            authUI.delegate = self
+        authUI.delegate = self
+        
+        let authViewController = authUI.authViewController()
+        self.present(authViewController, animated: true)
             
-            let authViewController = authUI.authViewController()
-            self.present(authViewController, animated: true)
         }
     }
     
@@ -61,12 +66,18 @@ class TypeOfSignInTableViewController: UITableViewController, FUIAuthDelegate {
                         print("Error writing document: \(err.localizedDescription)")
                     } else {
                         print("Document successfully written!")
+                        
                     }
                 }
+            
             if isHistory {
+                
                 let vc = self.storyboard!.instantiateViewController(withIdentifier: "statusNC") //as! ResultViewController
                 self.present(vc, animated: true, completion: nil)
+                
+                
             } else {
+            
                 let vc = self.storyboard!.instantiateViewController(withIdentifier: "SendPhotoController") //as! ResultViewController
                 self.present(vc, animated: true, completion: nil)
             }
@@ -74,6 +85,10 @@ class TypeOfSignInTableViewController: UITableViewController, FUIAuthDelegate {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of rows
         return 6
+        
     }
+
+
 }

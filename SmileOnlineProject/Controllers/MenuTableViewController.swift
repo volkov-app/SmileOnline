@@ -33,7 +33,7 @@ class MenuTableViewController: UITableViewController {
     
     
     @IBAction func signInButton(_ sender: Any) {
-        let vc = self.storyboard!.instantiateViewController(withIdentifier: "SigningViewController") as! SigningViewController
+        let vc = self.storyboard!.instantiateViewController(withIdentifier: "TypeOfSignInTableViewController") as! TypeOfSignInTableViewController
         vc.isHistory = true
         self.navigationController?.present(vc, animated: true)
         
@@ -92,6 +92,17 @@ class MenuTableViewController: UITableViewController {
         
     }
     
+    
+    
+    
+    func openUrl(urlStr:String!) {
+        
+        if let url = URL(string:urlStr) {
+            UIApplication.shared.openURL(url)
+        }
+        
+        
+    }
     func dialNumber(number : String) {
         
         if let url = URL(string: "tel://\(number)"),
@@ -114,7 +125,7 @@ class MenuTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if UserDefaults.standard.string(forKey: "authID") != nil {
-            if indexPath.row == 1 { return 0 } else { return heights[indexPath.row] }
+            if indexPath.row == 1 || indexPath.row == 2 || indexPath.row == 5 { return 0 } else { return heights[indexPath.row] }
         } else {if indexPath.row == 2 || indexPath.row == 3 || indexPath.row == 4 || indexPath.row == 5 || indexPath.row == 6 { return 0 } else { return heights[indexPath.row] }}
     }
     
