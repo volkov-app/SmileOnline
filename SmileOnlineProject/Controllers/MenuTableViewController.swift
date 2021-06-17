@@ -25,15 +25,17 @@ class MenuTableViewController: UITableViewController {
         
         if UserDefaults.standard.string(forKey: "isDoctor") == nil {
             statusButton.setTitle(descriptionArray[0], for: .normal)
-                } else {
-                    statusButton.setTitle(descriptionArray[1], for: .normal)
-                }
+        } else {
+            statusButton.setTitle(descriptionArray[1], for: .normal)
+        }
         
     }
     
     
     @IBAction func signInButton(_ sender: Any) {
-        let vc = self.storyboard!.instantiateViewController(withIdentifier: "TypeOfSignInTableViewController") as! TypeOfSignInTableViewController
+        //        let vc = self.storyboard!.instantiateViewController(withIdentifier: "TypeOfSignInTableViewController") as! TypeOfSignInTableViewController
+        let vc = self.storyboard!.instantiateViewController(withIdentifier: "SigningViewController") as! SigningViewController
+//        vc.modalPresentationStyle = .formSheet
         vc.isHistory = true
         self.navigationController?.present(vc, animated: true)
         
@@ -57,6 +59,8 @@ class MenuTableViewController: UITableViewController {
             
             FirebaseManager.instance.logOut(mainVC: self)
         }
+        alert.addAction(alertAction1)
+        present(alert, animated: true)
     }
     
     @IBAction func callButton(_ sender: Any) { dialNumber(number: "+79313605280" )
@@ -76,7 +80,7 @@ class MenuTableViewController: UITableViewController {
             FirebaseManager.instance.logOut(mainVC: self)
             
         }
-            
+        
         let alertAction2 = UIAlertAction(title: "Нет", style: .default) { (_) in
             
             self.tabBarController?.selectedViewController = self.tabBarController?.viewControllers?[0]

@@ -181,7 +181,8 @@ class PhotosViewController: UIViewController, UICollectionViewDelegate, UICollec
         } else {
             //переход на регистрацию
             vc.modalPresentationStyle = .fullScreen
-            vc = self.storyboard!.instantiateViewController(withIdentifier: "TypeOfSignInTableViewController")  as! TypeOfSignInTableViewController
+//            vc = self.storyboard!.instantiateViewController(withIdentifier: "TypeOfSignInTableViewController")  as! TypeOfSignInTableViewController
+            vc = self.storyboard!.instantiateViewController(withIdentifier: "SigningViewController")  as! SigningViewController
         }
         self.navigationController?.pushViewController(vc, animated: true)
     }
