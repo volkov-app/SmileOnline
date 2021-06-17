@@ -51,7 +51,7 @@
 		<string>YES</string>
 	</dict>
 	<key>NSCameraUsageDescription</key>
-	<string>This app requires access to the camera.</string>
+	<string>The app requires access to the camera to be able to create a treatment plan for you</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

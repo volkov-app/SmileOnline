@@ -28,17 +28,13 @@ class TypeOfSignInTableViewController: UITableViewController, FUIAuthDelegate {
         googleButton.dropShadow()
         AppleButton.dropShadow()
         facebookButton.dropShadow()
-        
-    
     }
-
-    
+  
     @IBAction func phoneButton(_ sender: Any) {
         let vc = self.storyboard!.instantiateViewController(withIdentifier: "SigningViewController") as! SigningViewController
         vc.modalPresentationStyle = .formSheet
         self.present(vc, animated: true)
     }
-    
     
     @IBAction func appleIDLoginButtonTapped(_ sender: Any) {
         
@@ -46,7 +42,7 @@ class TypeOfSignInTableViewController: UITableViewController, FUIAuthDelegate {
             authUI.providers = [FUIOAuth.appleAuthProvider()]
         authUI.delegate = self
         
-        let authViewController = authUI.authViewController()
+            let authViewController = authUI.authViewController()
         self.present(authViewController, animated: true)
             
         }
@@ -54,27 +50,29 @@ class TypeOfSignInTableViewController: UITableViewController, FUIAuthDelegate {
     
     func authUI(_ authUI: FUIAuth, didSignInWith authDataResult: AuthDataResult?, error: Error?) {
         if let user = authDataResult?.user {
-            print("nice! \(user.uid) и емей \(user.email ?? "") ")
+            print("nice! \(user.uid) и емей \(user.email ?? "")")
             UserDefaults.standard.set( authDataResult?.user.uid, forKey: "authID")
             
-            db.collection("users")
-                .document("\(Auth.auth().currentUser!.uid)")
-                .setData([
-                    "number": "\(user.email ?? user.uid)"
-                ]) { err in
-                    if let err = err {
-                        print("Error writing document: \(err.localizedDescription)")
-                    } else {
-                        print("Document successfully written!")
-                        
+                db.collection("users")
+                    .document("\(Auth.auth().currentUser!.uid)")
+                    .setData([
+                        "number": "\(user.email ?? user.uid)"
+                    ]) { err in
+                        if let err = err {
+                            print("Error writing document: \(err.localizedDescription)")
+                        } else {
+                            print("Document successfully written!")
+                            
+                        }
                     }
-                }
+            
+            
+           
             
             if isHistory {
                 
                 let vc = self.storyboard!.instantiateViewController(withIdentifier: "statusNC") //as! ResultViewController
                 self.present(vc, animated: true, completion: nil)
-                
                 
             } else {
             
