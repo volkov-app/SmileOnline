@@ -16,7 +16,7 @@ class FirebaseManager {
     let firebaseAuth = Auth.auth()
     
     static var instance = FirebaseManager()
-
+    
     func sendPhotos(photos: [UIImage], cashClientName: String) {
         
         //Отправка фотографий на сервер
@@ -84,12 +84,12 @@ class FirebaseManager {
                 }
             }
     }
-
+    
     func logOut(mainVC: UIViewController) {
         
         
         do {
-          try firebaseAuth.signOut()
+            try firebaseAuth.signOut()
             
             UserDefaults.standard.setValue(nil, forKey: "authID")
             let vc = mainVC.storyboard!.instantiateViewController(withIdentifier: "statusNC")
@@ -98,7 +98,7 @@ class FirebaseManager {
             
             
         } catch let signOutError as NSError {
-          print ("Error signing out: %@", signOutError)
+            print ("Error signing out: %@", signOutError)
         }
     }
     
@@ -107,25 +107,25 @@ class FirebaseManager {
         UserDefaults.standard.set(phone, forKey: "phoneNumber")
         
         PhoneAuthProvider.provider().verifyPhoneNumber(phone, uiDelegate: nil) { (verificationID, error) in
-          if let error = error {
-            print(error.localizedDescription)
-            
-            return
-          }
-          // Sign in using the verificationID and the code sent to the user
-          // ...
-          UserDefaults.standard.set(verificationID, forKey: "authVerificationID")
-          print("No error")
+            if let error = error {
+                print(error.localizedDescription)
+                
+                return
+            }
+            // Sign in using the verificationID and the code sent to the user
+            // ...
+            UserDefaults.standard.set(verificationID, forKey: "authVerificationID")
+            print("No error")
         }
     }
- 
+    
     
     func loginByVerificationCode(verificationCode: String, phone: String, mainVC: UIViewController, isHistory: Bool) {
         
         UserDefaults.standard.set(verificationCode, forKey: "authVerificationCode")
         
         guard let verificationID = UserDefaults.standard.string(forKey: "authVerificationID") else { return }
-
+        
         
         let credential = PhoneAuthProvider.provider().credential(
             withVerificationID: verificationID,
@@ -177,10 +177,10 @@ class FirebaseManager {
                 
                 
             } else {
-            
-            let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SendPhotoController") as! SendPhotoController
-            vc.modalPresentationStyle = .fullScreen
-            mainVC.present(vc, animated: true)
+                
+                let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "PhotosViewController") as! PhotosViewController
+                vc.modalPresentationStyle = .fullScreen
+                mainVC.present(vc, animated: true)
             }
             
         }
@@ -192,14 +192,14 @@ class FirebaseManager {
             let islandRef = storage.reference(withPath: "users/\(user)/\(client)/photo\(fileNum).jpg")
             // Download in memory with a maximum allowed size of 1MB (1 * 1024 * 1024 bytes)
             islandRef.getData(maxSize: 1 * 1024 * 1024) { data, error in
-              if let error = error {
-                print(error.localizedDescription)
-                // Uh-oh, an error occurred!
-              } else {
-                // Data for "images/island.jpg" is returned
-                let image = UIImage(data: data!)
-                photos.append(image!)
-              }
+                if let error = error {
+                    print(error.localizedDescription)
+                    // Uh-oh, an error occurred!
+                } else {
+                    // Data for "images/island.jpg" is returned
+                    let image = UIImage(data: data!)
+                    photos.append(image!)
+                }
                 
             }
         }
