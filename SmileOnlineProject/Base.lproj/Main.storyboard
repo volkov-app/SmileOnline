@@ -243,11 +243,10 @@
                             <constraint firstItem="sBe-CF-4g6" firstAttribute="trailing" secondItem="z7l-qF-okK" secondAttribute="trailing" constant="30" id="Xy8-q4-uWK"/>
                             <constraint firstItem="AZ1-zz-S9t" firstAttribute="leading" secondItem="sBe-CF-4g6" secondAttribute="leading" constant="40" id="Ztg-nF-Fw1"/>
                             <constraint firstItem="sBe-CF-4g6" firstAttribute="bottom" secondItem="DhN-ym-AdR" secondAttribute="bottom" constant="30" id="aSr-rd-3VY"/>
-                            <constraint firstItem="sBe-CF-4g6" firstAttribute="trailing" secondItem="UkE-HI-VdP" secondAttribute="trailing" constant="30" id="af1-Yv-NWK"/>
+                            <constraint firstItem="sBe-CF-4g6" firstAttribute="trailing" secondItem="UkE-HI-VdP" secondAttribute="trailing" constant="40" id="af1-Yv-NWK"/>
                             <constraint firstItem="sBe-CF-4g6" firstAttribute="trailing" secondItem="AZ1-zz-S9t" secondAttribute="trailing" constant="40" id="hF7-ev-xZ7"/>
                             <constraint firstItem="z7l-qF-okK" firstAttribute="leading" secondItem="sBe-CF-4g6" secondAttribute="leading" constant="30" id="rwc-cw-r9t"/>
                             <constraint firstItem="sBe-CF-4g6" firstAttribute="trailing" secondItem="DhN-ym-AdR" secondAttribute="trailing" constant="30" id="yD9-r0-tLF"/>
-                            <constraint firstItem="sBe-CF-4g6" firstAttribute="trailing" secondItem="UkE-HI-VdP" secondAttribute="trailing" constant="40" id="yQU-xw-34R"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Подтверждение" id="sXs-2w-QWj"/>
@@ -334,18 +333,18 @@
             <objects>
                 <viewController storyboardIdentifier="TutorialViewController" modalPresentationStyle="fullScreen" id="oir-l1-GLA" customClass="TutorialViewController" customModule="SmileOnlineProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="J4M-rO-Uid">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wUh-hH-jM8" customClass="WKYTPlayerView">
-                                <rect key="frame" x="28" y="143" width="315" height="259"/>
+                                <rect key="frame" x="28" y="199" width="315" height="259"/>
                                 <color key="backgroundColor" systemColor="systemGray3Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="259" id="6jl-c3-UvG"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Fm-ui-s2V">
-                                <rect key="frame" x="30" y="60" width="315" height="53"/>
+                                <rect key="frame" x="30" y="116" width="315" height="53"/>
                                 <string key="text">Посмотрите видео
 “Как правильно сделать фото”</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
@@ -367,7 +366,7 @@
                         <barButtonItem key="backBarButtonItem" title="Назад" id="TEp-NI-aPc"/>
                         <barButtonItem key="rightBarButtonItem" title="Item" style="plain" id="xqt-IF-aMe">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="ja7-I7-kXd">
-                                <rect key="frame" x="271" y="6" width="123" height="44"/>
+                                <rect key="frame" x="236" y="6" width="123" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="menutest1"/>
                                 <connections>
@@ -390,7 +389,7 @@
             <objects>
                 <viewController storyboardIdentifier="PhotosViewController" modalPresentationStyle="fullScreen" id="ZYz-fM-QOc" customClass="PhotosViewController" customModule="SmileOnlineProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oHr-RE-Nav">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NxW-1e-A4p">
@@ -439,7 +438,6 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="enterTapped:" destination="ZYz-fM-QOc" eventType="touchUpInside" id="gzh-xe-mMu"/>
-                                    <action selector="onboardingTapped:" destination="7lV-Vj-Ukz" eventType="touchUpInside" id="qU2-64-4vs"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zcs-bx-AjO">
@@ -697,24 +695,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="GsI-ml-f8U">
-                                <rect key="frame" x="35.5" y="537" width="304" height="100"/>
+                                <rect key="frame" x="34.5" y="537" width="306" height="100"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jfr-XE-jvu">
-                                        <rect key="frame" x="0.0" y="0.0" width="62.5" height="100"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="63" height="100"/>
                                         <state key="normal" image="phonecallIcon"/>
                                         <connections>
                                             <action selector="callButton:" destination="pO7-lz-GkE" eventType="touchUpInside" id="n4H-dI-dGy"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4VJ-2d-9MR">
-                                        <rect key="frame" x="80.5" y="0.0" width="62.5" height="100"/>
+                                        <rect key="frame" x="81" y="0.0" width="63" height="100"/>
                                         <state key="normal" image="telegramIcon"/>
                                         <connections>
                                             <action selector="telegramButton:" destination="pO7-lz-GkE" eventType="touchUpInside" id="Qba-QA-Eyb"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMM-Jg-1Is">
-                                        <rect key="frame" x="161" y="0.0" width="62.5" height="100"/>
+                                        <rect key="frame" x="162" y="0.0" width="63" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="Tmm-TP-uPI"/>
                                         </constraints>
@@ -724,7 +722,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2b7-7i-elt">
-                                        <rect key="frame" x="241.5" y="0.0" width="62.5" height="100"/>
+                                        <rect key="frame" x="243" y="0.0" width="63" height="100"/>
                                         <state key="normal" image="WhatsupIcon"/>
                                         <connections>
                                             <action selector="whatupButton:" destination="pO7-lz-GkE" eventType="touchUpInside" id="vwC-hK-chW"/>
@@ -1650,7 +1648,7 @@
             <objects>
                 <tableViewController storyboardIdentifier="MenuTableViewController" id="EO3-qd-nED" customClass="MenuTableViewController" customModule="SmileOnlineProject" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="0uE-XI-DSE">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <sections>

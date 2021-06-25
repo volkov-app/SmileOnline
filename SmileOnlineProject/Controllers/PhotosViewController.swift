@@ -7,6 +7,7 @@
 
 import UIKit
 import Firebase
+import SVProgressHUD
 
 class PhotosViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource{
     
@@ -19,16 +20,6 @@ class PhotosViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     var isDoctor = false
     var descriptionArray = ["Отправьте фото улыбки и получите варианты исправления прикуса", "Отправьте фото улыбки вашего клиента и получите варианты исправления прикуса"]
-    
-    
-    
-    var activityIndicator: UIActivityIndicatorView = {
-        let activity = UIActivityIndicatorView()
-        activity.translatesAutoresizingMaskIntoConstraints = false
-        activity.bounds = CGRect(x: 0, y: 0, width: 45, height: 45)
-        activity.isHidden = true
-        return activity
-    }()
     
     //скокращение
     let storage = Storage.storage()
@@ -97,8 +88,7 @@ class PhotosViewController: UIViewController, UICollectionViewDelegate, UICollec
             
         } else if isAllPhotos() {
             
-            activityIndicator.isHidden = false
-            activityIndicator.startAnimating()
+            SVProgressHUD.show()
             savePhotos()
             
             
@@ -174,16 +164,26 @@ class PhotosViewController: UIViewController, UICollectionViewDelegate, UICollec
         if UserDefaults.standard.string(forKey: "authID") != nil {
             
             //Переход на экран результата
-            FirebaseManager.instance.sendPhotos(photos: photos, cashClientName: nameTF.text!)
-            vc = self.storyboard!.instantiateViewController(withIdentifier: "ResultViewController") as! ResultViewController
-            
-            
+            var isTransitioned = false
+            FirebaseManager.instance.sendPhotos(photos: photos, cashClientName: nameTF.text!) { result in
+                if result == true {
+                    vc = self.storyboard!.instantiateViewController(withIdentifier: "ResultViewController") as! ResultViewController
+                    if isTransitioned == false {
+                        isTransitioned = true
+                        self.navigationController?.pushViewController(vc, animated: true)
+                    }
+                        
+                    
+                } else {
+                    let alert = UIAlertController(title: "При загрузке произошла ошибка. Попробуйте позже", message: nil, preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "Хорошо", style: .default))
+                    self.present(alert, animated: true)
+                }
+            }
         } else {
             //переход на регистрацию
-            vc.modalPresentationStyle = .fullScreen
-//            vc = self.storyboard!.instantiateViewController(withIdentifier: "TypeOfSignInTableViewController")  as! TypeOfSignInTableViewController
             vc = self.storyboard!.instantiateViewController(withIdentifier: "SigningViewController")  as! SigningViewController
+            self.navigationController?.pushViewController(vc, animated: true)
         }
-        self.navigationController?.pushViewController(vc, animated: true)
     }
 }

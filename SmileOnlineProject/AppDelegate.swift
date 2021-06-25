@@ -13,6 +13,7 @@ import FirebaseCore
 import IQKeyboardManagerSwift
 import GoogleSignIn
 import FBSDKCoreKit
+import SVProgressHUD
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
@@ -52,6 +53,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         GIDSignIn.sharedInstance()?.delegate = self
         
         getToken()
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
         
         
         return true

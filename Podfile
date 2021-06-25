@@ -21,6 +21,7 @@ pod 'Alamofire'
 pod 'IQKeyboardManagerSwift'
 pod 'GoogleSignIn'
 pod 'FBSDKLoginKit'
+pod 'SVProgressHUD'
 
 
 # add pods for any other desired Firebase products

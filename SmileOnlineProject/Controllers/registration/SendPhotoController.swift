@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 class SendPhotoController: UIViewController {
     
@@ -33,10 +34,17 @@ class SendPhotoController: UIViewController {
     
     
     @IBAction func sendPhotoPressed(_ sender: Any) {
-        FirebaseManager.instance.sendPhotos(photos: photos, cashClientName: cashClientName)
         
-        let vc = self.storyboard!.instantiateViewController(withIdentifier: "ResultViewController") as! ResultViewController
-        self.present(vc, animated: true, completion: nil)
+        SVProgressHUD.show()
+        var isTransitioned = false
+        FirebaseManager.instance.sendPhotos(photos: photos, cashClientName: cashClientName) { _ in
+            if isTransitioned == false {
+                isTransitioned = true
+                let vc = self.storyboard!.instantiateViewController(withIdentifier: "ResultViewController") as! ResultViewController
+                self.present(vc, animated: true, completion: nil)
+            }
+        }
+        
         
         
     }

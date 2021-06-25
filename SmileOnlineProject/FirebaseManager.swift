@@ -7,6 +7,7 @@
 
 import Foundation
 import Firebase
+import SVProgressHUD
 
 class FirebaseManager {
     
@@ -17,7 +18,8 @@ class FirebaseManager {
     
     static var instance = FirebaseManager()
     
-    func sendPhotos(photos: [UIImage], cashClientName: String) {
+    func sendPhotos(photos: [UIImage], cashClientName: String, complition: @escaping (Bool) -> Void) {
+        
         
         //Отправка фотографий на сервер
         let storageRef = self.storage.reference()
@@ -31,6 +33,8 @@ class FirebaseManager {
         
         var i = 0
         
+        
+        
         for photo in photos {
             
             
@@ -41,9 +45,9 @@ class FirebaseManager {
             //конвертируем тип фотографии в тип Data
             var data = Data()
             data = photo.jpegData(compressionQuality: 0.8)!
-            i += 1
             
             UserDefaults.standard.set(data, forKey: "photo\(i)")
+            i += 1
             
             photosRef.putData(data, metadata: metaData) { (metadata, error) in
                 guard let metadata = metadata else {
@@ -63,6 +67,12 @@ class FirebaseManager {
                         return
                     }
                 }
+                
+                if i == 6 {
+                    SVProgressHUD.dismiss()
+                    complition(true)
+                }
+                
             }
         }
         
@@ -78,9 +88,9 @@ class FirebaseManager {
             ]) { err in
                 if let err = err {
                     print("Error writing document: \(err.localizedDescription)")
+                    complition(false)
                 } else {
                     print("Document successfully written!")
-                    
                 }
             }
     }
