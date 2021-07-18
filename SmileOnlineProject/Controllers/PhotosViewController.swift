@@ -49,6 +49,7 @@ class PhotosViewController: UIViewController, UICollectionViewDelegate, UICollec
         
         //регистрируем ячейку
         collectionView.register(UINib(nibName: "CollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "collectionViewCell")
+        
     }
     
     @IBAction func bezopasnostButton(_ sender: Any) {
@@ -182,6 +183,7 @@ class PhotosViewController: UIViewController, UICollectionViewDelegate, UICollec
             }
         } else {
             //переход на регистрацию
+            SVProgressHUD.dismiss()
             vc = self.storyboard!.instantiateViewController(withIdentifier: "SigningViewController")  as! SigningViewController
             self.navigationController?.pushViewController(vc, animated: true)
         }

@@ -56,9 +56,10 @@ class MenuTableViewController: UITableViewController {
         
         let alert = UIAlertController(title: "Подтверждение", message: "Вы действительно хотите выйти из учетной записи? При выходе потребуется через номер телефона снова входить в приложение", preferredStyle: .alert)
         let alertAction1 = UIAlertAction(title: "Да", style: .default) { (_) in
-            
             FirebaseManager.instance.logOut(mainVC: self)
         }
+        let alertAction2 = UIAlertAction(title: "Отмена", style: .cancel)
+        alert.addAction(alertAction2)
         alert.addAction(alertAction1)
         present(alert, animated: true)
     }

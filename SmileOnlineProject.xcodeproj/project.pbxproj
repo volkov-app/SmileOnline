@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1BAEF857710CB0FC30969077 /* Pods_SmileOnlineProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654BAFDC3D4C2067A907D42B /* Pods_SmileOnlineProjectTests.framework */; };
-		74401FA18B30F21E2E91D701 /* Pods_SmileOnlineProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F95145EB250C3D071CF2EE49 /* Pods_SmileOnlineProjectUITests.framework */; };
+		590B85A6437A913EF471FD17 /* Pods_SmileOnlineProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1D0819FD7855FD3EC535ED9 /* Pods_SmileOnlineProjectTests.framework */; };
+		7EC298AA3A221A87A93AF017 /* Pods_SmileOnlineProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB4E1BC7A686A9B7C50A0E5 /* Pods_SmileOnlineProject.framework */; };
 		A629585A260A74B900C8F33F /* DoctorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6295859260A74B900C8F33F /* DoctorViewController.swift */; };
 		A64AB28726262393006D0961 /* AdminConcole.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64AB28626262393006D0961 /* AdminConcole.swift */; };
 		A64AB2A92629EFE7006D0961 /* AdminConcoleClients.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64AB2A82629EFE7006D0961 /* AdminConcoleClients.swift */; };
@@ -35,7 +35,7 @@
 		A6FB5C7525DD7AAE00105A2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6FB5C7325DD7AAE00105A2B /* LaunchScreen.storyboard */; };
 		A6FB5C8025DD7AAE00105A2B /* SmileOnlineProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB5C7F25DD7AAE00105A2B /* SmileOnlineProjectTests.swift */; };
 		A6FB5C8B25DD7AAF00105A2B /* SmileOnlineProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB5C8A25DD7AAF00105A2B /* SmileOnlineProjectUITests.swift */; };
-		C33CE6CC293BABAAF227776E /* Pods_SmileOnlineProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D61D9A1092EA61EF48B929D /* Pods_SmileOnlineProject.framework */; };
+		F27A92D7D5A8823E22F97D54 /* Pods_SmileOnlineProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71D6D0BCE40E02B8CC0C34B8 /* Pods_SmileOnlineProjectUITests.framework */; };
 		FA67AD3F25F366C000DE97FC /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA67AD3E25F366C000DE97FC /* ResultViewController.swift */; };
 		FA6C5E6225E82D760073FFE5 /* VerifyingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6C5E6125E82D760073FFE5 /* VerifyingViewController.swift */; };
 		FA6C5E6425E832960073FFE5 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6C5E6325E832960073FFE5 /* PhotosViewController.swift */; };
@@ -65,12 +65,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2A4A968F81B6D0D16287C864 /* Pods-SmileOnlineProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmileOnlineProjectUITests.release.xcconfig"; path = "Target Support Files/Pods-SmileOnlineProjectUITests/Pods-SmileOnlineProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
-		4D61D9A1092EA61EF48B929D /* Pods_SmileOnlineProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmileOnlineProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4DFB53A04305509AA0AE68E4 /* Pods-SmileOnlineProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmileOnlineProjectUITests.debug.xcconfig"; path = "Target Support Files/Pods-SmileOnlineProjectUITests/Pods-SmileOnlineProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		5EF21475F8461171A22C9B1F /* Pods-SmileOnlineProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmileOnlineProject.debug.xcconfig"; path = "Target Support Files/Pods-SmileOnlineProject/Pods-SmileOnlineProject.debug.xcconfig"; sourceTree = "<group>"; };
-		654BAFDC3D4C2067A907D42B /* Pods_SmileOnlineProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmileOnlineProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A61B3D44122B54E6D7DC3FFF /* Pods-SmileOnlineProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmileOnlineProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-SmileOnlineProjectTests/Pods-SmileOnlineProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0EDC598F3F8F7815A2AB5C95 /* Pods-SmileOnlineProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmileOnlineProject.release.xcconfig"; path = "Target Support Files/Pods-SmileOnlineProject/Pods-SmileOnlineProject.release.xcconfig"; sourceTree = "<group>"; };
+		1AB4E1BC7A686A9B7C50A0E5 /* Pods_SmileOnlineProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmileOnlineProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		497CBD57C5ED290A638C3D4D /* Pods-SmileOnlineProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmileOnlineProject.debug.xcconfig"; path = "Target Support Files/Pods-SmileOnlineProject/Pods-SmileOnlineProject.debug.xcconfig"; sourceTree = "<group>"; };
+		71D6D0BCE40E02B8CC0C34B8 /* Pods_SmileOnlineProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmileOnlineProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		75B73F483F92C62341C87C52 /* Pods-SmileOnlineProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmileOnlineProjectTests.release.xcconfig"; path = "Target Support Files/Pods-SmileOnlineProjectTests/Pods-SmileOnlineProjectTests.release.xcconfig"; sourceTree = "<group>"; };
+		9911091B137F7D17D9B753C9 /* Pods-SmileOnlineProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmileOnlineProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-SmileOnlineProjectTests/Pods-SmileOnlineProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A6295859260A74B900C8F33F /* DoctorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorViewController.swift; sourceTree = "<group>"; };
 		A64AB28626262393006D0961 /* AdminConcole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminConcole.swift; sourceTree = "<group>"; };
 		A64AB2A82629EFE7006D0961 /* AdminConcoleClients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminConcoleClients.swift; sourceTree = "<group>"; };
@@ -104,8 +104,9 @@
 		A6FB5C8625DD7AAF00105A2B /* SmileOnlineProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmileOnlineProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6FB5C8A25DD7AAF00105A2B /* SmileOnlineProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileOnlineProjectUITests.swift; sourceTree = "<group>"; };
 		A6FB5C8C25DD7AAF00105A2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C0FB2E172CA444C7019E425F /* Pods-SmileOnlineProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmileOnlineProjectTests.release.xcconfig"; path = "Target Support Files/Pods-SmileOnlineProjectTests/Pods-SmileOnlineProjectTests.release.xcconfig"; sourceTree = "<group>"; };
-		F95145EB250C3D071CF2EE49 /* Pods_SmileOnlineProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmileOnlineProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B822BBAE9BD3179C678A8877 /* Pods-SmileOnlineProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmileOnlineProjectUITests.release.xcconfig"; path = "Target Support Files/Pods-SmileOnlineProjectUITests/Pods-SmileOnlineProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E1D0819FD7855FD3EC535ED9 /* Pods_SmileOnlineProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmileOnlineProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E708EF378C3C8E5E5D66AD77 /* Pods-SmileOnlineProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmileOnlineProjectUITests.debug.xcconfig"; path = "Target Support Files/Pods-SmileOnlineProjectUITests/Pods-SmileOnlineProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		FA67AD3E25F366C000DE97FC /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		FA6C5E6125E82D760073FFE5 /* VerifyingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyingViewController.swift; sourceTree = "<group>"; };
 		FA6C5E6325E832960073FFE5 /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
@@ -115,7 +116,6 @@
 		FADA7C7C25EECBE9005FCDD0 /* ClientInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientInfoViewController.swift; sourceTree = "<group>"; };
 		FAE8403E265D5E3300DE9720 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAF60CCF25F35D4F009893A7 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
-		FB7CD106B7E270AB09732DD2 /* Pods-SmileOnlineProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmileOnlineProject.release.xcconfig"; path = "Target Support Files/Pods-SmileOnlineProject/Pods-SmileOnlineProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,7 +123,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C33CE6CC293BABAAF227776E /* Pods_SmileOnlineProject.framework in Frameworks */,
+				7EC298AA3A221A87A93AF017 /* Pods_SmileOnlineProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,7 +131,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BAEF857710CB0FC30969077 /* Pods_SmileOnlineProjectTests.framework in Frameworks */,
+				590B85A6437A913EF471FD17 /* Pods_SmileOnlineProjectTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +139,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74401FA18B30F21E2E91D701 /* Pods_SmileOnlineProjectUITests.framework in Frameworks */,
+				F27A92D7D5A8823E22F97D54 /* Pods_SmileOnlineProjectUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,7 +175,7 @@
 				A6FB5C8925DD7AAF00105A2B /* SmileOnlineProjectUITests */,
 				A6FB5C6325DD7AAC00105A2B /* Products */,
 				CC0DDD5AE631A159F591CB21 /* Pods */,
-				D4190706607F6B07531077BF /* Frameworks */,
+				DA1B41E251A22F0E1A4089CA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -236,22 +236,22 @@
 		CC0DDD5AE631A159F591CB21 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5EF21475F8461171A22C9B1F /* Pods-SmileOnlineProject.debug.xcconfig */,
-				FB7CD106B7E270AB09732DD2 /* Pods-SmileOnlineProject.release.xcconfig */,
-				A61B3D44122B54E6D7DC3FFF /* Pods-SmileOnlineProjectTests.debug.xcconfig */,
-				C0FB2E172CA444C7019E425F /* Pods-SmileOnlineProjectTests.release.xcconfig */,
-				4DFB53A04305509AA0AE68E4 /* Pods-SmileOnlineProjectUITests.debug.xcconfig */,
-				2A4A968F81B6D0D16287C864 /* Pods-SmileOnlineProjectUITests.release.xcconfig */,
+				497CBD57C5ED290A638C3D4D /* Pods-SmileOnlineProject.debug.xcconfig */,
+				0EDC598F3F8F7815A2AB5C95 /* Pods-SmileOnlineProject.release.xcconfig */,
+				9911091B137F7D17D9B753C9 /* Pods-SmileOnlineProjectTests.debug.xcconfig */,
+				75B73F483F92C62341C87C52 /* Pods-SmileOnlineProjectTests.release.xcconfig */,
+				E708EF378C3C8E5E5D66AD77 /* Pods-SmileOnlineProjectUITests.debug.xcconfig */,
+				B822BBAE9BD3179C678A8877 /* Pods-SmileOnlineProjectUITests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		D4190706607F6B07531077BF /* Frameworks */ = {
+		DA1B41E251A22F0E1A4089CA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4D61D9A1092EA61EF48B929D /* Pods_SmileOnlineProject.framework */,
-				654BAFDC3D4C2067A907D42B /* Pods_SmileOnlineProjectTests.framework */,
-				F95145EB250C3D071CF2EE49 /* Pods_SmileOnlineProjectUITests.framework */,
+				1AB4E1BC7A686A9B7C50A0E5 /* Pods_SmileOnlineProject.framework */,
+				E1D0819FD7855FD3EC535ED9 /* Pods_SmileOnlineProjectTests.framework */,
+				71D6D0BCE40E02B8CC0C34B8 /* Pods_SmileOnlineProjectUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -282,13 +282,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A6FB5C8F25DD7AAF00105A2B /* Build configuration list for PBXNativeTarget "SmileOnlineProject" */;
 			buildPhases = (
-				745DF64343479D3AD8F58A2A /* [CP] Check Pods Manifest.lock */,
+				B77ED6B4EE2FA86D2BC86B2E /* [CP] Check Pods Manifest.lock */,
 				A6FB5C5E25DD7AAC00105A2B /* Sources */,
 				A6FB5C5F25DD7AAC00105A2B /* Frameworks */,
 				A6FB5C6025DD7AAC00105A2B /* Resources */,
 				FA28DFBC267B134400186A8B /* ShellScript */,
-				03350622B4C7D60D11BB8D11 /* [CP] Embed Pods Frameworks */,
-				3498F67228E1725BDBF1FCC4 /* [CP] Copy Pods Resources */,
+				E9C94EAE0B62CDE41F97E50C /* [CP] Embed Pods Frameworks */,
+				579ABFC5EC8AA9BA74DBDD17 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -303,7 +303,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A6FB5C9225DD7AAF00105A2B /* Build configuration list for PBXNativeTarget "SmileOnlineProjectTests" */;
 			buildPhases = (
-				EE34628C5945B1A07D5609D6 /* [CP] Check Pods Manifest.lock */,
+				8D723121ED54E35E80CA4FEB /* [CP] Check Pods Manifest.lock */,
 				A6FB5C7725DD7AAE00105A2B /* Sources */,
 				A6FB5C7825DD7AAE00105A2B /* Frameworks */,
 				A6FB5C7925DD7AAE00105A2B /* Resources */,
@@ -322,7 +322,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A6FB5C9525DD7AAF00105A2B /* Build configuration list for PBXNativeTarget "SmileOnlineProjectUITests" */;
 			buildPhases = (
-				E4D102C1ACD3F8FCA9B96C72 /* [CP] Check Pods Manifest.lock */,
+				7AEB92BA5E95493DFE7C518F /* [CP] Check Pods Manifest.lock */,
 				A6FB5C8225DD7AAF00105A2B /* Sources */,
 				A6FB5C8325DD7AAF00105A2B /* Frameworks */,
 				A6FB5C8425DD7AAF00105A2B /* Resources */,
@@ -409,24 +409,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		03350622B4C7D60D11BB8D11 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SmileOnlineProject/Pods-SmileOnlineProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SmileOnlineProject/Pods-SmileOnlineProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SmileOnlineProject/Pods-SmileOnlineProject-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3498F67228E1725BDBF1FCC4 /* [CP] Copy Pods Resources */ = {
+		579ABFC5EC8AA9BA74DBDD17 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -443,29 +426,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SmileOnlineProject/Pods-SmileOnlineProject-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		745DF64343479D3AD8F58A2A /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SmileOnlineProject-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E4D102C1ACD3F8FCA9B96C72 /* [CP] Check Pods Manifest.lock */ = {
+		7AEB92BA5E95493DFE7C518F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -487,7 +448,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EE34628C5945B1A07D5609D6 /* [CP] Check Pods Manifest.lock */ = {
+		8D723121ED54E35E80CA4FEB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -507,6 +468,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B77ED6B4EE2FA86D2BC86B2E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmileOnlineProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9C94EAE0B62CDE41F97E50C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmileOnlineProject/Pods-SmileOnlineProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmileOnlineProject/Pods-SmileOnlineProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SmileOnlineProject/Pods-SmileOnlineProject-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FA28DFBC267B134400186A8B /* ShellScript */ = {
@@ -735,13 +735,14 @@
 		};
 		A6FB5C9025DD7AAF00105A2B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5EF21475F8461171A22C9B1F /* Pods-SmileOnlineProject.debug.xcconfig */;
+			baseConfigurationReference = 497CBD57C5ED290A638C3D4D /* Pods-SmileOnlineProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SmileOnlineProject/SmileOnlineProject.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 5;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 8R6WQM9KWN;
 				INFOPLIST_FILE = SmileOnlineProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -758,7 +759,7 @@
 		};
 		A6FB5C9125DD7AAF00105A2B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FB7CD106B7E270AB09732DD2 /* Pods-SmileOnlineProject.release.xcconfig */;
+			baseConfigurationReference = 0EDC598F3F8F7815A2AB5C95 /* Pods-SmileOnlineProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -781,7 +782,7 @@
 		};
 		A6FB5C9325DD7AAF00105A2B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A61B3D44122B54E6D7DC3FFF /* Pods-SmileOnlineProjectTests.debug.xcconfig */;
+			baseConfigurationReference = 9911091B137F7D17D9B753C9 /* Pods-SmileOnlineProjectTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -803,7 +804,7 @@
 		};
 		A6FB5C9425DD7AAF00105A2B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C0FB2E172CA444C7019E425F /* Pods-SmileOnlineProjectTests.release.xcconfig */;
+			baseConfigurationReference = 75B73F483F92C62341C87C52 /* Pods-SmileOnlineProjectTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -825,7 +826,7 @@
 		};
 		A6FB5C9625DD7AAF00105A2B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4DFB53A04305509AA0AE68E4 /* Pods-SmileOnlineProjectUITests.debug.xcconfig */;
+			baseConfigurationReference = E708EF378C3C8E5E5D66AD77 /* Pods-SmileOnlineProjectUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -845,7 +846,7 @@
 		};
 		A6FB5C9725DD7AAF00105A2B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2A4A968F81B6D0D16287C864 /* Pods-SmileOnlineProjectUITests.release.xcconfig */;
+			baseConfigurationReference = B822BBAE9BD3179C678A8877 /* Pods-SmileOnlineProjectUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

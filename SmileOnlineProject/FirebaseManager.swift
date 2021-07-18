@@ -71,6 +71,9 @@ class FirebaseManager {
                 if i == 6 {
                     SVProgressHUD.dismiss()
                     complition(true)
+                } else {
+                    SVProgressHUD.dismiss()
+                    complition(false)
                 }
                 
             }
@@ -188,7 +191,7 @@ class FirebaseManager {
                 
             } else {
                 
-                let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "PhotosViewController") as! PhotosViewController
+                let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ResultViewController") as! ResultViewController
                 vc.modalPresentationStyle = .fullScreen
                 mainVC.present(vc, animated: true)
             }
