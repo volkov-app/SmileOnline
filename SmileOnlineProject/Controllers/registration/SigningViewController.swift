@@ -15,6 +15,9 @@ class SigningViewController: UIViewController, UITextFieldDelegate{
     @IBOutlet weak var numberTF: UITextField!
     @IBOutlet weak var nextButton: UIButton!
     
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.setNavigationBarHidden(false, animated: true)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
