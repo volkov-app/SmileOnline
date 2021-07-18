@@ -45,7 +45,7 @@ class MenuTableViewController: UITableViewController {
     }
     
     @IBAction func bookButtonPressed(_ sender: Any) {
-        openUrl(urlStr: "https://smileonline.ru/vebinar2")
+        openUrl(urlStr: "https://smileonline.ru")
     }
     
     @IBAction func adminConcoleButtonPressed(_ sender: Any) {
